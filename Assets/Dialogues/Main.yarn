@@ -1,0 +1,1049 @@
+title: Scene_1
+tags: 
+colorID: 0
+position: 192,-343
+---
+<< DisplayName Dialogue_TextPanel None>> 
+*Knock Knock*
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Ah…
+It looks like they’re finally here.
+Right on time for dinner.
+<< DisplayName Dialogue_TextPanel None>> 
+*Knock Knock*
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Coming!
+Welcome!
+<< DisplayName Dialogue_TextPanel Son>> 
+It’s good to see you again, dad.
+<< DisplayName Dialogue_TextPanel Grandson>> 
+Hello Grandpa Paul!
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Hello, Oscar.
+Please, make yourselves at home! Dinner’s almost ready.
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Oh, hey everyone! Dinner’s ready, I just need help preparing the table.
+<< DisplayName Dialogue_TextPanel Son>> 
+Alright, let’s go.
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Thanks Ryan.
+[[Scene_1.1]]
+===
+title: Scene_1.1
+tags: 
+colorID: 0
+position: 441,-345
+---
+<< DisplayName Dialogue_TextPanel Grandson>> 
+Hmm… delicious!
+I love Auntie Amanda’s spaghetti!
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Phew! I’m glad you like it.
+Have more, I think I might have cooked a little too much.
+<< DisplayName Dialogue_TextPanel Grandson>> 
+Okay!
+<< DisplayName Dialogue_TextPanel Daughter>> 
+{$ellipsis}
+So… Ryan.
+<< DisplayName Dialogue_TextPanel Son>> 
+Yes?
+<< DisplayName Dialogue_TextPanel Daughter>> 
+How’s your job hunting going?
+<< DisplayName Dialogue_TextPanel Son>> 
+Uh… pretty well, I guess.
+I… received a few job offers. And… I got an interview next week.
+<< DisplayName Dialogue_TextPanel Daughter>> 
+That’s great news!
+<< DisplayName Dialogue_TextPanel Grandson>> 
+What’s Auntie Amanda’s job!
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Haha… I’m a nurse. You know, those ladies who work in the hospital.
+<< DisplayName Dialogue_TextPanel Grandson>> 
+Wow! That sounds so cool!
+What’s Grandpa Paul’s job!
+<< DisplayName Dialogue_TextPanel Daughter>> 
+{$ellipsis}
+Grandpa doesn’t have a job, he’s retired now.
+But he used to be an pilot for Crystal Air.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+And a great one that is! I have more 11,500 flying hours and not a single incident!
+<< DisplayName Dialogue_TextPanel Grandson>> 
+Wow! So cool!
+But if Grandpa Paul is so good at flying? Why did he quit?
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Haha. That’s because…
+Umm…
+Because…
+{$ellipsis}
+Huh, I don’t remember.
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Err…
+Old age! Remember? You said you were too old to fly!
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Did I?
+That doesn’t feel right…
+I do remember loving flying so much that I promised myself I’ll still be flying at this age.
+So why-
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Anyways… that doesn’t matter! Oscar, have some more spaghetti, yeah?
+<< DisplayName Dialogue_TextPanel Grandson>> 
+Yay!
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+This is strange, I have no memory of-
+<< DisplayName Dialogue_TextPanel Daughter>> 
+A…Anyways! I think we still have some old boardgames lying around, so how about we play some after this?
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Amanda! Why are you being so-
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Dad! You should hurry up and finish your spaghetti before it gets all cold and soggy.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+{$ellipsis}
+Okay.
+[[Scene_1.2]]
+===
+title: Scene_1.2
+tags: 
+colorID: 0
+position: 692,-341
+---
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+{$ellipsis}
+Ever since dinner, this strange feeling still hasn’t gone away.
+*Sigh*
+I’m still bothered the fact I can’t remember why I quit.
+I remember being a pilot and absolutely loving it, and then… I’m not!
+What happened in between is so hazy!
+And why is Amanda being so aggressive?
+{$ellipsis}
+Maybe I’ll just sleep it off.
+Help! Help!
+Somebody, please! Anybody!
+{$ellipsis}
+Is this it?
+Is this how I die?!
+No… this can’t be! I-
+<< DisplayName Dialogue_TextPanel Unknown>> 
+Dad…?
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+{$ellipsis}
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Dad? Wake up! What happened?
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+{$ellipsis}
+It was just a dream.
+<< DisplayName Dialogue_TextPanel Daughter>> 
+A dream?
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+I’m fine. It was just a nightmare.
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Okay…
+Anyways, breakfast is ready. I just wanted to remind you to eat it before it grows cold again, anyways I’ve got to prepare for work.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Don’t worry, I will.
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Alright, see you in the living room.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+{$ellipsis}
+I’ve got to remember why I quit being a pilot.
+{$ellipsis}
+But where do I even begin?
+{$ellipsis}
+I’ll think about it over breakfast.
+That was a good meal.
+I’ve got it!
+I could try asking Amanda, but I don’t think she’s be much help…
+And I could try phoning some of my friends… but I don’t know if they’ll even know anything about why I retired.
+{$ellipsis}
+But should I even try asking Amanda?
+[[Try talking to Amanda|Scene_2A]]
+[[Don’t bring it up|Scene_2B]]
+===
+title: Scene_2A
+tags: 
+colorID: 0
+position: 971,-473
+---
+<< set $amandaKnowsInvestigation to 1>> 
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+It’ll be hard. But I think I should be able to reason with her.
+{$ellipsis}
+Oh well, I won’t know until I try!
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Oh wow, you finished eating quick!
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Of course, the food tasted great!
+But I have something I want to talk to you about. Do you have time?
+<< DisplayName Dialogue_TextPanel Daughter>> 
+{$ellipsis}?
+Okay, but make it quick.
+-> It’s about why I retired.
+    << DisplayName Dialogue_TextPanel Grandfather>> 
+    It’s about why I retired.
+    << DisplayName Dialogue_TextPanel Daughter>> 
+    Not this again…
+    Look I don’t have time for this, I’ve got to go-
+    ->Tell me why I retired!
+        Look. I told you already, I’m late.
+        I’m sorry. Maybe, we’ll talk another time!
+        << DisplayName Dialogue_TextPanel Grandfather>> 
+        No… I…!
+	    *Sigh*
+	    This was to be expected.
+	    Maybe I’ll have better luck with phoning my friends.
+        [[Scene_2.1]]
+    ->Are you hiding something from me?
+        [[Scene_2A.1]]
+-> Are you hiding something from me?
+    [[Scene_2A.1]]
+===
+title: Scene_2B
+tags: 
+colorID: 0
+position: 972,-237
+---
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Oh wow, you finished eating quick!
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Of course, the food tasted great!
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Haha… I’m glad.
+Anyways, I’ve got to go now, or I’m going to be late for work!
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Have a good day at work!
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Thanks, see you.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Bye.
+{$ellipsis}
+I guess it’s time to phone my friends.
+[[Scene_2.1]]
+===
+title: Scene_2A.1
+tags: 
+colorID: 0
+position: 1251,-473
+---
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Are you hiding something from me?
+<< DisplayName Dialogue_TextPanel Daughter>> 
+{$ellipsis}!
+No. Umm… what am I evening hiding from you?
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+The reason why I retired.
+<< DisplayName Dialogue_TextPanel Daughter>> 
+{$ellipsis}!!
+Haha… don’t be silly. I’m not hiding anything from you!
+->Do you think I’m stupid?
+    << DisplayName Dialogue_TextPanel Grandfather>> 
+    Do you think I’m stupid?
+    << DisplayName Dialogue_TextPanel Daughter>> 
+    Excuse me? No, I don’t!
+	{$ellipsis}
+	Look, I don’t have time for this. I’ve got to go-
+    I’m sorry. We’ll talk another time!
+    << DisplayName Dialogue_TextPanel Grandfather>> 
+    {$ellipsis}
+	*Sigh*
+	This was to be expected.
+	Maybe I’ll have better luck with phoning my friends.
+->{$ellipsis}
+    << set $paulHeardOfAccident to 1>> 
+    << DisplayName Dialogue_TextPanel Grandfather>> 
+    {$ellipsis}
+    << DisplayName Dialogue_TextPanel Daughter>> 
+    Look. I… I’m sorry. I’m just don’t feel comfortable talking about it right now.
+    {$ellipsis}Especially about the accident.
+    << DisplayName Dialogue_TextPanel Grandfather>> 
+    Accident? What accident?
+    << DisplayName Dialogue_TextPanel Daughter>> 
+    !!!
+	Look, forget I said anything alright?
+	I’ve got to go now, or I’m going to be late!
+    << DisplayName Dialogue_TextPanel Grandfather>> 
+    Wait. Amanda-
+	No… I…!
+	*Sigh*
+    Accident, huh? At least I have some information I can use now when phoning my friends.
+[[Scene_2.1]]
+===
+title: Scene_2.1
+tags: 
+colorID: 0
+position: 1529,-362
+---
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+*Deep breaths*
+Let’s begin.
+I’ve got a long day ahead of me.
+{$ellipsis}
+Okay. Thank you. Bye.
+*Sigh*
+Still no luck. I’ve tried about 10 people and none of them remember anything about my career.
+Should I just give up?
+{$ellipsis}
+No. I’ll try once more.
+Hmm… Alwyn.
+*Dials number*
+<< DisplayName Dialogue_TextPanel Phone>> 
+*Ring Ring*
+<< DisplayName Dialogue_TextPanel Alwyn>> 
+Hello?
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Hello! Is this Alwyn?
+<< DisplayName Dialogue_TextPanel Alwyn>> 
+Yes.
+Hold on a minute...Paul, is that you?
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Yes. It’s me.
+<< DisplayName Dialogue_TextPanel Alwyn>> 
+Wow! Long time no see. How have you been?
+-> I’m fine. What about you?
+    << DisplayName Dialogue_TextPanel Grandfather>> 
+    I’m fine. What about you?
+    << DisplayName Dialogue_TextPanel Alwyn>> 
+    Oh. I’m doing well!
+	But, it’s really been a long time since I last spoke to you!
+	How’s your kids? How’s Amanda? Did she finally graduate from med school?
+    -> Yes, and Amanda’s a nurse at the local hospital.
+        << DisplayName Dialogue_TextPanel Grandfather>> 
+        Yes, and Amanda’s a nurse at the local hospital.
+        << DisplayName Dialogue_TextPanel Alwyn>> 
+        Congratulations! I knew she could do it!
+	    But how’s Ryan doing? How’s his relationship with his girlfriend?
+        -> They got married.
+            << DisplayName Dialogue_TextPanel Grandfather>> 
+            They got married.
+            << DisplayName Dialogue_TextPanel Alwyn>> 
+            Wow! That’s amazing news!!! I always knew they are very compatible with each other.
+	        Did they start a family yet? 
+            -> Yes. They have a son named Oscar now.
+                << set $paulListenedToAlwyn to 1>> 
+                << DisplayName Dialogue_TextPanel Grandfather>> 
+                Yes. They have a son named Oscar now.    
+                << DisplayName Dialogue_TextPanel Alwyn>> 
+                Wow wow wow! This has been a great talk. We should meet up sometime and catch up more.
+                << DisplayName Dialogue_TextPanel Grandfather>> 
+                Okay.
+                << DisplayName Dialogue_TextPanel Alwyn>> 
+                So anyways, what did you call me for?
+                << DisplayName Dialogue_TextPanel Grandfather>> 
+                Right, I've got a question to ask.
+                [[Scene_2.2]]
+            -> Yes. But now I’ve got a question to ask.
+                << DisplayName Dialogue_TextPanel Grandfather>> 
+                Yes. But now I’ve got a question to ask.
+                [[Scene_2.2]]
+        -> They got married. But now I’ve got a question to ask.
+            << DisplayName Dialogue_TextPanel Grandfather>> 
+            They got married. But now I’ve got a question to ask.
+            [[Scene_2.2]]
+    -> Yes. But I’ve got a question to ask.
+        << DisplayName Dialogue_TextPanel Grandfather>> 
+        Yes. But I’ve got a question to ask.
+        [[Scene_2.2]]
+-> Fine. But I’ve got a question to ask.
+    << DisplayName Dialogue_TextPanel Grandfather>> 
+    Fine. But I’ve got a question to ask.
+    [[Scene_2.2]]
+===
+title: Scene_2.2
+tags: 
+colorID: 0
+position: 1797,-359
+---
+<< DisplayName Dialogue_TextPanel Alwyn>> 
+Alright. Go ahead.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Okay.
+Do you remember the time when I was an airline pilot?
+<< DisplayName Dialogue_TextPanel Alwyn>> 
+Hmm…
+Oh yes. You were working for Crystal Air, weren’t you?
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Yes.
+<< DisplayName Dialogue_TextPanel Alwyn>> 
+I remember that was the only thing you talked every time we went out.
+Seriously, it was the only thing you were talking about.
+So anyways, what about it?
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+I wanted to know if I’ve ever told you the reason I’ve retired.
+<< DisplayName Dialogue_TextPanel Alwyn>> 
+Hold on, let me try to remember…
+{$ellipsis}
+Nothing’s coming up. Do you have anything that can jolt my memory?
+The only thing I remember is something really bad happening and you stopped talking to me for a quite few years.
+[[Sorry, I don’t remember much as well.|Scene_2.2A]]
+[[Was it that bad?|Scene_2.2B]]
+<<if $paulHeardOfAccident is 1>>
+[[I think it might have involved an accident of some kind.|Scene_2.2C]]
+<< endif>>
+===
+title: Scene_2.2A
+tags: 
+colorID: 0
+position: 2076,-492
+---
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Sorry, I don’t remember much as well.
+<< DisplayName Dialogue_TextPanel Alwyn>> 
+Huh, this is going to be hard, let me try to remember again.
+{$ellipsis}
+{$ellipsis}
+Sorry, I’m still drawing a blank.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+That’s okay, thanks for trying.
+<< DisplayName Dialogue_TextPanel Alwyn>> 
+You have your children, don’t you?
+You should try asking them instead.
+I’m sorry.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Really, it’s  okay, I understand.
+<< if $paulListenedToAlwyn is 1>>
+<< set $paulKnowsCrash to 1>> 
+You know what?
+Since you took your time to listen to me ramble just now, let me try to remember one more time.
+This time I’ll put in my 300% effort!
+Ughh…
+Ughhhh!
+Oh something came to me!
+Oh?
+Hmm...
+I think it might something to do with a crash.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+A crash?
+You don’t mean-
+<< DisplayName Dialogue_TextPanel Alwyn>> 
+I’m not too sure myself, you should definitely confirm this with your children.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+I Will. Thank you for your help.
+I’ll ask my son right away.
+<< DisplayName Dialogue_TextPanel Alwyn>> 
+Son? What about your daughter?
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+She isn’t too keen on helping me.
+<< DisplayName Dialogue_TextPanel Alwyn>> 
+Ah. I see. Good luck! It was nice chatting with you.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Likewise, goodbye.
+A crash, huh…
+Did I cause a crash and forget about it?!
+{$ellipsis}
+Enough speculating, I should call my son right away.
+<< else>> 
+<< DisplayName Dialogue_TextPanel Alwyn>> 
+I’m really sorry I couldn’t help, but good luck with your search.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+It’s okay. It’s not your fault.
+Anyways, I’ll talk to you later. I’m going to call my son now to see if he knows anything.
+<< DisplayName Dialogue_TextPanel Alwyn>> 
+Son? What about your daughter?
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+She isn’t too keen on helping me.
+<< DisplayName Dialogue_TextPanel Alwyn>> 
+Ah. I see. Good luck! It was nice chatting with you.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Likewise, goodbye.
+Hopefully my son has answers, I’m running out of options!
+<< endif>>
+[[Scene_2.3]]
+===
+title: Scene_2.2B
+tags: 
+colorID: 0
+position: 2076,-235
+---
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Was it that bad?
+<< DisplayName Dialogue_TextPanel Alwyn>> 
+Yes. It was really bad.
+I tried calling you many times, but you never picked up.
+That is until today, this is a very pleasant surprise.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+I’m sorry.
+<< DisplayName Dialogue_TextPanel Alwyn>> 
+Don’t worry about it!
+Anyways, going back on topic, do you have anything that can jolt my memory?
+[[Sorry, I don’t remember much as well.|Scene_2.2A]]
+<< if $paulHeardOfAccident is 1>>
+[[I think it might have involved an accident of some kind.|Scene_2.2C]]
+<< endif>>
+===
+title: Scene_2.2C
+tags: 
+colorID: 0
+position: 2335,-364
+---
+<< set $paulKnowsCrash to 1>> 
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+I think it might have involved an accident of some kind.
+<< DisplayName Dialogue_TextPanel Alwyn>> 
+I see let me think…
+{$ellipsis}
+Oh wait. I remember something!
+Oh?
+Umm…
+All I can remember is that some kind of crash happened, and you quit.
+I’m not too sure myself, you should definitely confirm this with your children.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Alright, thanks for your help!
+I’ll ask my son right away!
+<< DisplayName Dialogue_TextPanel Alwyn>> 
+Son? What about your daughter?
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+She isn’t too keen on helping me.
+<< DisplayName Dialogue_TextPanel Alwyn>> 
+Ah. I see. Good luck! It was nice chatting with you.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Likewise, goodbye.
+A crash, huh…
+Did I cause a crash and forget about it?!
+{$ellipsis}
+Enough speculating, I should call my son right away.
+[[Scene_2.3]]
+===
+title: Scene_2.3
+tags: 
+colorID: 0
+position: 2646,-360
+---
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+*Deep breaths*
+Please help me, son!
+Well, here goes nothing.
+<< DisplayName Dialogue_TextPanel Phone>> 
+*Ring Ring*
+<< DisplayName Dialogue_TextPanel Son>> 
+Oh, hi dad. 
+{$ellipsis}Is there something you want?
+-> Can you tell me why I retired?
+    << DisplayName Dialogue_TextPanel Grandfather>> 
+    Can you tell me why I retired?
+    << if $amandaKnowsInvestigation is 1>> 
+        [[Scene_2.3A]]
+    << else>>
+        << DisplayName Dialogue_TextPanel Son>> 
+        Oh. Is the conversation from yesterday still bothering you?
+        << DisplayName Dialogue_TextPanel Grandfather>> 
+        Very much.
+        << DisplayName Dialogue_TextPanel Son>> 
+        I see…
+        How much do you remember?
+        -> Not Much.
+            << DisplayName Dialogue_TextPanel Grandfather>> 
+            Not Much.
+            << DisplayName Dialogue_TextPanel Son>> 
+            {$ellipsis}
+            Sorry dad. I don’t know how I feel about telling you this.
+            Maybe you should try Amanda instead, it would be better to tell you in person anyways.
+            << DisplayName Dialogue_TextPanel Grandfather>> 
+            I did! But she keeps dodging the question!
+            << DisplayName Dialogue_TextPanel Son>> 
+            I see...
+            Look dad, I’m sorry I can’t help you. 
+            But I know you’ll be able to get through her eventually.
+            << DisplayName Dialogue_TextPanel Grandfather>> 
+            How are you so sure?
+            << DisplayName Dialogue_TextPanel Son>> 
+            {$ellipsis}
+            Do you know something about an accident?
+            << if $paulHeardOfAccident is 1>>
+                << DisplayName Dialogue_TextPanel Grandfather>> 
+                Yes.
+                Okay, bring that up with her, I’m pretty sure she’ll open up and tell you.
+                I hope you’re right. Thanks for your help.
+            << else>>
+                << set $paulHeardOfAccident to 1>> 
+                << DisplayName Dialogue_TextPanel Grandfather>> 
+                No. What accident?
+                << DisplayName Dialogue_TextPanel Son>> 
+                {$ellipsis}
+                An accident involving a plane.
+                << DisplayName Dialogue_TextPanel Grandfather>> 
+                Huh? I was involved in a plane accident?
+                << DisplayName Dialogue_TextPanel Son>> 
+                That’s all I can say, dad.
+                Bring that up with Amanda, and I’m pretty sure she’ll open up and tell you.
+                << DisplayName Dialogue_TextPanel Grandfather>> 
+                Okay. Thanks for your help.
+            << endif>> 
+            << DisplayName Dialogue_TextPanel Son>> 
+            Sorry dad, I really feel it would be better if this gets told to you in person.
+            << DisplayName Dialogue_TextPanel Grandfather>> 
+            I understand.
+            Goodbye.
+            << DisplayName Dialogue_TextPanel Son>> 
+            Okay, bye.
+            << DisplayName Dialogue_TextPanel Phone>> 
+            *Click*
+            << DisplayName Dialogue_TextPanel Grandfather>> 
+            {$ellipsis}
+            I’m just going to lie down for a while.
+        -> I only know I was in an accident. << if $paulHeardOfAccident is 1>>
+            << DisplayName Dialogue_TextPanel Grandfather>> 
+            I only know I was in an accident.
+            << DisplayName Dialogue_TextPanel Son>> 
+            So you remember being involved in an accident?
+            << DisplayName Dialogue_TextPanel Grandfather>> 
+            Yes. But I don’t remember any details about it.
+            << DisplayName Dialogue_TextPanel Son>> 
+            Okay. Let me think of what to say…
+            [[Scene_2.3B]]
+        -> Something about a crash. << if $paulKnowsCrash is 1>>
+            << DisplayName Dialogue_TextPanel Son>> 
+            !!!
+            I see, you remember the crash.
+            << DisplayName Dialogue_TextPanel Grandfather>>
+            I don’t remember much about it, though. Can you tell me more about it?
+            [[Scene_2.3B]]
+    << endif>> 
+-> Was there an accident in my career? << if $paulHeardOfAccident is 1>>
+    << DisplayName Dialogue_TextPanel Grandfather>>
+    Was there an accident in my career?
+    << DisplayName Dialogue_TextPanel Son>> 
+    Umm…
+    << DisplayName Dialogue_TextPanel Grandfather>>
+    Do you know anything about it?
+    << if $amandaKnowsInvestigation is 1>> 
+        [[Scene_2.3A]]
+    << else>>
+        [[Scene_2.3B]]
+    << endif>> 
+-> I heard that I was involved in a plane crash. << if $paulKnowsCrash is 1>>
+    << DisplayName Dialogue_TextPanel Grandfather>>
+    I heard that I was involved in a plane crash.
+    << DisplayName Dialogue_TextPanel Son>> 
+    So, I guess the cat is out of the bag, huh?
+    << DisplayName Dialogue_TextPanel Grandfather>>
+    No, I’m still pretty fuzzy on a lot of the details. So, will you please explain to me what happened?
+    << if $amandaKnowsInvestigation is 1>> 
+        << DisplayName Dialogue_TextPanel Son>> 
+        Well, in the morning, Amanda called me and told me not to tell you about this.
+        But...
+        I might as well.
+    << endif>> 
+    [[Scene_2.3B]]
+===
+title: Scene_2.3A
+tags: 
+colorID: 0
+position: 2921,-493
+---
+<< set $sonCallRejected to 1>> 
+<< DisplayName Dialogue_TextPanel Son>> 
+Oh no.
+Yes dad. I do but…
+Amanda called me a while ago, and she told me about what you said this morning.
+She also told me not to tell you anything…
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Hold on, she did what now?
+<< DisplayName Dialogue_TextPanel Son>> 
+Sorry dad. Please understand, she’s doing this for your own good, and…
+I agree with her, I also feel that it would probably better if you did.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+{$ellipsis}
+Thanks for your help.
+<< DisplayName Dialogue_TextPanel Son>> 
+Dad, I-
+<< DisplayName Dialogue_TextPanel None>> 
+*Click*
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+*Sigh*
+I’m just going to lie down for a while.
+[[Scene_3]]
+===
+title: Scene_2.3B
+tags: 
+colorID: 0
+position: 2922,-254
+---
+<< set $paulGetsCrashDetails to 1>> 
+<< DisplayName Dialogue_TextPanel Son>> 
+I… 
+Promise me you won’t tell Amanda I told you this.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+I promise.
+<< DisplayName Dialogue_TextPanel Son>> 
+Good, because she definitely doesn’t want you to know about this. 
+She prefers it to be just water under the bridge.
+Anyways, there’s no easy way to say this but…
+You were involved in a fatal crash.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+A fatal crash?
+<< DisplayName Dialogue_TextPanel Son>> 
+Yes.
+And after being rescued, you decided to quit there and then.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+A fatal crash? I don’t remember being involved in a plane crash, let alone a fatal one.
+Are you sure you aren’t misremembering?
+<< DisplayName Dialogue_TextPanel Son>> 
+Yes dad. That’s why Amanda and I were shocked when you seemed to have forgotten everything about it. 
+And we’ve been trying to keep it that way for years because you became a lot happier.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+This… this is a lot to take in. How could I have forgotten such an important thing?
+Do you remember what the flight number of the plane was?
+<< DisplayName Dialogue_TextPanel Son>> 
+Umm…
+Not off the top of my head. But I do remember the number being around two thousand something.
+I’m pretty sure Amanda remembers this better than me.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Okay. Thanks son.
+<< DisplayName Dialogue_TextPanel Son>> 
+No problem dad… just… call me if you need help, okay?
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Will do. Goodbye.
+<< DisplayName Dialogue_TextPanel Son>> 
+Bye.
+<< DisplayName Dialogue_TextPanel Phone>> 
+*Click*
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+{$ellipsis}
+This is too much information for me to process right now…
+I’m just going to lie down for a bit.
+[[Scene_3]]
+===
+title: Scene_3
+tags: 
+colorID: 0
+position: 3213,-357
+---
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+zzz
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Dad? Are you awake? Dinner’s ready.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+*Yawn*
+{$ellipsis}What time is it?
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Around 8, I think.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Okay... I’ll be at the table in 5 minutes.
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Alright, please eat before the food gets cold.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+I will.
+{$ellipsis}
+I didn’t expect to sleep till this late…
+This is bad. I don’t have much time to prepare myself.
+*Tsk*
+This is my last chance today to get my daughter to tell me the truth.
+Let’s review what I know.
+<< if $paulHeardOfAccident is 1>> 
+    << set $paulKnowsSomethingAboutCrash to 1>> 
+    I was involved in some kind of accident that led me to retire.
+<< endif>> 
+<< if $paulKnowsCrash is 1>> 
+    << set $paulKnowsSomethingAboutCrash to 1>> 
+    And that accident was a plane crash, which I survived but remember nothing about.
+<< endif>> 
+<< if $paulGetsCrashDetails is 1>> 
+    << set $paulKnowsSomethingAboutCrash to 1>> 
+    But my son remembers it, and he even remembers the flight number being two thousand… something.
+<< endif>> 
+<< if $sonCallRejected is 1>> 
+    << set $paulKnowsSomethingAboutCrash to 1>> 
+    But Amanda keeps interfering with my investigation. She even told Ryan to keep silent about this! Why?
+<< endif>> 
+<< if $paulKnowsSomethingAboutCrash is 0>> 
+    I can’t believe it. I still don’t know anything about how I retired!
+    {$ellipsis}
+    This is to be expected, that’s no way I’ll be able to discover everything in one day. I still have tomorrow…
+<< endif>> 
+Either way. I should get going now before Amanda nags at me again. 
+*Deep breaths*
+Let’s do this.
+{$ellipsis}
+So, Amanda.
+{$ellipsis}Yes?
+[[Scene_3.1]]
+===
+title: Scene_3.1
+tags: 
+colorID: 0
+position: 3477,-360
+---
+<< DisplayName Dialogue_TextPanel Daughter>> 
+-> I want to know why I retired.
+    I want to know why I retired.
+    << DisplayName Dialogue_TextPanel Daughter>> 
+    This again?
+-> I was involved in an accident, wasn’t I? << if $paulHeardOfAccident is 1>>
+    << set $amandaKnowsPaulKnowsAccident to 1>> 
+    << DisplayName Dialogue_TextPanel Grandfather>> 
+    I was involved in an accident, wasn’t I?
+    << DisplayName Dialogue_TextPanel Daughter>> 
+    Haha. An accident?
+    What are you talking about?
+-> I retired after a plane crash, didn’t I? << if $paulKnowsCrash is 1>>
+    << set $amandaKnowsPaulKnowsCrash to 1>>    
+    << DisplayName Dialogue_TextPanel Grandfather>> 
+    I retired after a plane crash, didn’t I?
+    << DisplayName Dialogue_TextPanel Daughter>> 
+    !!!
+    N…No…
+    Ah…
+You should hurry up and eat. Your food’s cold already.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+*Deep breaths*
+Amanda, I’m being serious here.
+I don’t understand why you keep dodging the question.
+I’m starting to get mad.
+Why won’t you tell me?
+<< DisplayName Dialogue_TextPanel Daughter>> 
+I… I…
+-> Why won’t you tell me the reason why I retired?
+    << DisplayName Dialogue_TextPanel Grandfather>> 
+    Why won’t you tell me the reason why I retired?
+    << DisplayName Dialogue_TextPanel Daughter>> 
+    I did!
+    Remember? You retired because you felt that you were too old to fly!
+-> Why won’t you explain to me the accident? << if $paulHeardOfAccident is 1>>
+    << set $amandaKnowsPaulKnowsAccident to 1>> 
+    << DisplayName Dialogue_TextPanel Grandfather>> 
+    Why won’t you explain to me the accident?
+    << DisplayName Dialogue_TextPanel Daughter>> 
+    Accident? What accident?
+    << DisplayName Dialogue_TextPanel Grandfather>> 
+    The one that ended my career!
+    << DisplayName Dialogue_TextPanel Daughter>> 
+    Hmm… I don’t remember you being involved in an accident, especially one that ended your pilot career.
+    << DisplayName Dialogue_TextPanel Grandfather>> 
+    You’re lying, why did I quit then?
+    << DisplayName Dialogue_TextPanel Daughter>> 
+    Umm… because you felt that you were too old to fly, remember?
+-> Why are you hiding the crash from me? << if $paulKnowsCrash is 1>>
+    << set $amandaKnowsPaulKnowsCrash to 1>>    
+    << DisplayName Dialogue_TextPanel Grandfather>> 
+    Why are you hiding the crash from me?
+    << DisplayName Dialogue_TextPanel Daughter>> 
+    !!!
+    Haha… crash? What crash?
+    Who told you that?
+    << DisplayName Dialogue_TextPanel Grandfather>> 
+    That doesn’t matter! What matters is the reason why you’re lying to me!
+    << DisplayName Dialogue_TextPanel Daughter>> 
+    I’m not lying to you!
+    << DisplayName Dialogue_TextPanel Grandfather>> 
+    Really? Prove it.
+    << DisplayName Dialogue_TextPanel Daughter>> 
+    I don’t know how I can but… I also already told you the reason you retired.
+    It was because you felt that you were too old to fly!
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+That’s a lie, and we both know that.
+<< DisplayName Dialogue_TextPanel Daughter>> 
+No! I’m not lying. That is really the case!
+How can I get you to believe me?
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+{$ellipsis}
+Forget about it.
+I’m done here.
+<< DisplayName Dialogue_TextPanel Daughter>> 
+No! Wait!
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+What?
+<< DisplayName Dialogue_TextPanel Daughter>> 
+I…
+{$ellipsis}
+{$ellipsis}
+It wasn’t your fault, okay?
+So please, stop diving into this further!
+It will only end badly, I-
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+I can very well decide if it’s my own fault myself, okay?
+So please…
+Tell me what happened.
+Now.
+<< DisplayName Dialogue_TextPanel Daughter>> 
+*Sobs*
+Okay I will, just please sit back down and calm down for a while, okay?
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+*Deep breaths*
+Okay.
+[[Scene_3.2]]
+===
+title: Scene_3.2
+tags: 
+colorID: 0
+position: 3729,-360
+---
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+{$ellipsis}
+Listen, Amanda…
+I’m sorry for screaming at you earlier. I definitely lost my composure there…
+<< DisplayName Dialogue_TextPanel Daughter>> 
+No, no! It was my fault. I shouldn’t have kept this secret from you… I was being selfish!
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Okay. So, are we good to go?
+<< DisplayName Dialogue_TextPanel Daughter>> 
+{$ellipsis}Yes. I’m sorry.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+So, tell me… what happened that led to my retirement?
+<< DisplayName Dialogue_TextPanel Daughter>> 
+{$ellipsis}
+<< if $amandaKnowsPaulKnowsAccident is 1 or $amandaKnowsPaulKnowsCrash is 1>>
+    [[Scene_3.2A]]
+<< else>>
+    << DisplayName Dialogue_TextPanel Daughter>> 
+    Okay, let me try to see what I can remember…
+    Hmm…
+    {$ellipsis}
+    Sorry, I also don’t remember a lot about the plane crash… it was a long time ago after all.
+    << DisplayName Dialogue_TextPanel Grandfather>> 
+    Okay, but what do you remember?
+    << DisplayName Dialogue_TextPanel Daughter>> 
+    Hmm…
+    I remember you were piloting a regional airliner and it crashed into the ocean.
+    << DisplayName Dialogue_TextPanel Grandfather>> 
+    Oh no. Were there any casualties?
+    << DisplayName Dialogue_TextPanel Daughter>> 
+    Erm…
+    Yes, unfortunately.
+    << DisplayName Dialogue_TextPanel Grandfather>>     
+    Oh god, how many?
+    << DisplayName Dialogue_TextPanel Daughter>> 
+    I’m sorry I don’t remember…
+    << DisplayName Dialogue_TextPanel Grandfather>>
+    That’s okay. Do you remember anything else?
+    << DisplayName Dialogue_TextPanel Daughter>> 
+    Umm…
+    No, sorry.
+    << DisplayName Dialogue_TextPanel Grandfather>>
+    I see...
+    Thanks for telling me the truth, I’ll be going to bed now.
+    << DisplayName Dialogue_TextPanel Daughter>> 
+    Umm… dad! Your food!
+    << DisplayName Dialogue_TextPanel Grandfather>>
+    Don’t worry, I’m not hungry, save it for tomorrow.
+    << DisplayName Dialogue_TextPanel Daughter>> 
+    Umm…
+    Alright dad. Goodnight.
+    << DisplayName Dialogue_TextPanel Grandfather>>
+    Goodnight.
+    [[Scene_4]]
+<< endif>>
+===
+title: Scene_3.2A
+tags: 
+colorID: 0
+position: 3991,-487
+---
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Okay. You were right. You were involved in a plane crash and retired after that.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Involved? Wasn’t I the pilot of the plane?
+Shouldn’t it be “I caused a plane crash” instead?
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Not at all. After several investigations, it was deemed that it wasn’t your fault.
+And yet despite that…
+You still beat yourself up constantly for not doing enough to prevent the crash.
+And for several years, you were… super depressed and then you started drinking…
+Ryan and I were so worried that we were going to lose you…
+And then we started panicking, we didn’t know what to do.
+Until one day.
+Through some miracle, you seemed to have forgotten everything about the plane crash.
+We were overjoyed! You started recovering again!
+So…
+{$ellipsis}
+So that’s why I didn’t want to tell you about the plane crash again.
+Please, I don’t want you to relapse!
+{$ellipsis}
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+This is a lot of information for me to take in.
+{$ellipsis}But don’t worry!
+I still feeling okay… maybe the weight of this situation still hasn’t sunk in yet.
+Anyways, what can you tell me about the crash?
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Well, since you seem to remember crash anyways. I might as well tell you the truth.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+You mean you weren’t going to?
+<< DisplayName Dialogue_TextPanel Daughter>> 
+No! that’s not what I meant! 
+I just… didn’t want to dive into too much detail unnecessarily.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Please do, though.
+I want to know about everything that happened in detail.
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Okay… let’s see. Where do I begin?
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Can you tell me more about the plane first?
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Okay…
+Hmm…
+Ah, I remember. You were flying a small plane at the time… I think it was a regional airliner.
+I see.
+And I think the flight number was either 5940 or 2792.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Hmm…
+5940? 2792? Hmm… I don’t remember anything about those flights.
+<< DisplayName Dialogue_TextPanel Daughter>> 
+It was a flight between Singapore and Jakarta.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+I see. But where did the plane crash exactly?
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Umm…
+<< if $amandaKnowsPaulKnowsCrash is 1>>
+    {$ellipsis}
+    In the ocean, I think somewhere near Lampung province, which is somewhere near the top-left of Jakarta.
+    << DisplayName Dialogue_TextPanel Grandfather>>
+    Oh my goodness!
+    Was everyone safe?
+    << DisplayName Dialogue_TextPanel Daughter>> 
+    Umm…
+    I don’t know the what’s the best way to put this but…
+    You were the only survivor.
+    << DisplayName Dialogue_TextPanel Grandfather>>
+    I was what now?
+    << DisplayName Dialogue_TextPanel Daughter>> 
+    You were the only survivor the rescue teams could save from the crash.
+    I… I see.
+<< else>>
+    {$ellipsis}
+    {$ellipsis}?
+    {$ellipsis}
+    Sorry I don’t remember much about that.
+    << DisplayName Dialogue_TextPanel Grandfather>> 
+    Ah… That’s okay.
+    But wow, that’s quite a bit of information to take in.
+<< endif>> 
+<< DisplayName Dialogue_TextPanel Daughter>> 
+I’m sorry dad. I… this was why I didn’t want to tell you what had happened.
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+It’s… It’s not your fault, I think I’ll be going to bed now.
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Umm… dad! Your food!
+<< DisplayName Dialogue_TextPanel Grandfather>>
+Don’t worry, I’m not hungry, save it for tomorrow.
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Okay, but if you need me…
+Just approach me anytime, okay?
+<< DisplayName Dialogue_TextPanel Grandfather>>
+Will do.
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Goodnight dad.
+<< DisplayName Dialogue_TextPanel Grandfather>>
+Goodnight.
+[[Scene_4]]
+===
+title: Scene_4
+tags: 
+colorID: 0
+position: 4257,-364
+---
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+*Sigh*
+Maybe…
+Maybe it’s for the better if I just stopped the investigation here.
+<< if $amandaKnowsPaulKnowsAccident is 1 or $amandaKnowsPaulKnowsCrash is 1>>
+    The weight of what was said just now is already sinking in…
+    I’m already to feel terrible.
+    And I still don’t even remember half of the details about the crash…
+    I should really end the investigation here.
+<< endif>>
+{$ellipsis}
+Yes. That sounds like a good idea.
+If I investigate any further, it’s likely I might just relapse again…
+I don’t want that to happen obviously.
+{$ellipsis}
+Let’s see what kind of conclusion I can come up with from the information I have.
+{$ellipsis}And I’ll just accept that as the truth and move on.
+Alright, let’s see…
+===
