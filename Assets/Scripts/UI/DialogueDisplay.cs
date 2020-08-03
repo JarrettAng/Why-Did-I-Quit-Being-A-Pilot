@@ -10,6 +10,14 @@ public class DialogueDisplay : MonoBehaviour
     [SerializeField] private TextMeshProUGUI nameText = default;
     [SerializeField] private TextMeshProUGUI contentText = default;
 
+    private SceneManager sceneManager;
+    private RectTransform rectTransform;
+
+    private void Awake() {
+        sceneManager = SceneManager.Instance;
+        rectTransform = GetComponent<RectTransform>();
+    }
+
     public void DisplayContentText(string text) {
         contentText.text = text;
     }
@@ -40,6 +48,8 @@ public class DialogueDisplay : MonoBehaviour
         }
 
         DisplayNameText(nameToDisplay);
+
+        rectTransform.anchoredPosition = sceneManager.GetDialoguePositionFor(characterName);
     }
 
     private void DisplayNameText(string name) {

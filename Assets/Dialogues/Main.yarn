@@ -1,8 +1,11 @@
 title: Scene_1
 tags: 
 colorID: 0
-position: 192,-343
+position: 190,-347
 ---
+<< LoadScene SceneManager LIVINGROOM>> 
+<< UseDialoguePositionSet1 LivingRoomScene>> 
+<< ShowPose LivingRoomScene READ>> 
 << DisplayName Dialogue_TextPanel None>> 
 *Knock Knock*
 << DisplayName Dialogue_TextPanel Grandfather>> 
@@ -11,8 +14,15 @@ It looks like they’re finally here.
 Right on time for dinner.
 << DisplayName Dialogue_TextPanel None>> 
 *Knock Knock*
+<< UseDialoguePositionSet2 LivingRoomScene>> 
+<< ShowPose LivingRoomScene WALK>> 
 << DisplayName Dialogue_TextPanel Grandfather>> 
-Coming!
+Hold on! Hold on!
+I'm coming!
+<< LoadScene SceneManager FRONTDOORAREA>> 
+<< UseDialoguePositionSet1 FrontDoorAreaScene>> 
+<< ShowPose FrontDoorAreaScene WELCOME>> 
+<< DisplayName Dialogue_TextPanel Grandfather>> 
 Welcome!
 << DisplayName Dialogue_TextPanel Son>> 
 It’s good to see you again, dad.
@@ -21,8 +31,13 @@ Hello Grandpa Paul!
 << DisplayName Dialogue_TextPanel Grandfather>> 
 Hello, Oscar.
 Please, make yourselves at home! Dinner’s almost ready.
+<< ShowPose FrontDoorAreaScene DAUGHTER>> 
 << DisplayName Dialogue_TextPanel Daughter>> 
-Oh, hey everyone! Dinner’s ready, I just need help preparing the table.
+Oh, hey everyone! 
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+What a coincidence! Is dinner ready?
+<< DisplayName Dialogue_TextPanel Daughter>> 
+Yes, but I just need help preparing the table.
 << DisplayName Dialogue_TextPanel Son>> 
 Alright, let’s go.
 << DisplayName Dialogue_TextPanel Daughter>> 
@@ -32,9 +47,14 @@ Thanks Ryan.
 title: Scene_1.1
 tags: 
 colorID: 0
-position: 441,-345
+position: 438,-346
 ---
+<< BlackenIn EffectManager 0.25>> 
+<< LoadScene SceneManager DININGROOM>> 
+<< ShowPose DiningRoomScene DINING>> 
+<< wait 0.25>> 
 << DisplayName Dialogue_TextPanel Grandson>> 
+<< BlackenOut EffectManager 0.25>> 
 Hmm… delicious!
 I love Auntie Amanda’s spaghetti!
 << DisplayName Dialogue_TextPanel Daughter>> 
@@ -104,9 +124,15 @@ Okay.
 title: Scene_1.2
 tags: 
 colorID: 0
-position: 692,-341
+position: 692,-345
 ---
+<< BlackenIn EffectManager 0.25>> 
+<< LoadScene SceneManager BEDROOM>> 
+<< UseDialoguePositionSet1 BedRoomScene>> 
+<< ShowPose BedRoomScene REST>> 
+<< wait 1>> 
 << DisplayName Dialogue_TextPanel Grandfather>> 
+<< BlackenOut EffectManager 0.5>> 
 {$ellipsis}
 Ever since dinner, this strange feeling still hasn’t gone away.
 *Sigh*
@@ -116,6 +142,12 @@ What happened in between is so hazy!
 And why is Amanda being so aggressive?
 {$ellipsis}
 Maybe I’ll just sleep it off.
+<< BlackenIn EffectManager 1>> 
+<< LoadScene SceneManager OCEAN>> 
+<< ShowPose OceanScene HANDRAISE>> 
+<< wait 1>> 
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+<< BlackenOut EffectManager 0.25>> 
 Help! Help!
 Somebody, please! Anybody!
 {$ellipsis}
@@ -126,6 +158,8 @@ No… this can’t be! I-
 Dad…?
 << DisplayName Dialogue_TextPanel Grandfather>> 
 {$ellipsis}
+<< LoadScene SceneManager BEDROOM>> 
+<< ShowPose BedRoomScene WAKEUP>> 
 << DisplayName Dialogue_TextPanel Daughter>> 
 Dad? Wake up! What happened?
 << DisplayName Dialogue_TextPanel Grandfather>> 
@@ -137,11 +171,13 @@ A dream?
 I’m fine. It was just a nightmare.
 << DisplayName Dialogue_TextPanel Daughter>> 
 Okay…
-Anyways, breakfast is ready. I just wanted to remind you to eat it before it grows cold again, anyways I’ve got to prepare for work.
+Anyways, breakfast is ready. I just wanted to remind you to eat it before it grows cold again, 
 << DisplayName Dialogue_TextPanel Grandfather>> 
 Don’t worry, I will.
 << DisplayName Dialogue_TextPanel Daughter>> 
-Alright, see you in the living room.
+Alright, I’ve got to prepare for work.
+See you in the living room.
+<< ShowPose BedRoomScene REST>> 
 << DisplayName Dialogue_TextPanel Grandfather>> 
 {$ellipsis}
 I’ve got to remember why I quit being a pilot.
@@ -149,6 +185,12 @@ I’ve got to remember why I quit being a pilot.
 But where do I even begin?
 {$ellipsis}
 I’ll think about it over breakfast.
+<< BlackenIn EffectManager 0.25>> 
+<< LoadScene SceneManager DININGROOM>> 
+<< ShowPose DiningRoomScene BREAKFAST>> 
+<< wait 0.25>> 
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+<< BlackenOut EffectManager 0.25>> 
 That was a good meal.
 I’ve got it!
 I could try asking Amanda, but I don’t think she’s be much help…
@@ -161,13 +203,14 @@ But should I even try asking Amanda?
 title: Scene_2A
 tags: 
 colorID: 0
-position: 971,-473
+position: 971,-475
 ---
 << set $amandaKnowsInvestigation to 1>> 
 << DisplayName Dialogue_TextPanel Grandfather>> 
 It’ll be hard. But I think I should be able to reason with her.
 {$ellipsis}
 Oh well, I won’t know until I try!
+<< ShowPose DiningRoomScene DAUGHTERAPPEAR>> 
 << DisplayName Dialogue_TextPanel Daughter>> 
 Oh wow, you finished eating quick!
 << DisplayName Dialogue_TextPanel Grandfather>> 
@@ -185,6 +228,7 @@ Okay, but make it quick.
     ->Tell me why I retired!
         Look. I told you already, I’m late.
         I’m sorry. Maybe, we’ll talk another time!
+        << ShowPose DiningRoomScene DAUGHTERDISAPPEAR>> 
         << DisplayName Dialogue_TextPanel Grandfather>> 
         No… I…!
 	    *Sigh*
@@ -199,8 +243,12 @@ Okay, but make it quick.
 title: Scene_2B
 tags: 
 colorID: 0
-position: 972,-237
+position: 972,-236
 ---
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+I shouldn't bring this up with her.
+After all, I don't want her to know that I'm doing this investigation.
+<< ShowPose DiningRoomScene DAUGHTERAPPEAR>> 
 << DisplayName Dialogue_TextPanel Daughter>> 
 Oh wow, you finished eating quick!
 << DisplayName Dialogue_TextPanel Grandfather>> 
@@ -214,6 +262,7 @@ Have a good day at work!
 Thanks, see you.
 << DisplayName Dialogue_TextPanel Grandfather>> 
 Bye.
+<< ShowPose DiningRoomScene DAUGHTERDISAPPEAR>> 
 {$ellipsis}
 I guess it’s time to phone my friends.
 [[Scene_2.1]]
@@ -221,13 +270,13 @@ I guess it’s time to phone my friends.
 title: Scene_2A.1
 tags: 
 colorID: 0
-position: 1251,-473
+position: 1251,-475
 ---
 << DisplayName Dialogue_TextPanel Grandfather>> 
 Are you hiding something from me?
 << DisplayName Dialogue_TextPanel Daughter>> 
 {$ellipsis}!
-No. Umm… what am I evening hiding from you?
+No. Umm… what am I even hiding from you?
 << DisplayName Dialogue_TextPanel Grandfather>> 
 The reason why I retired.
 << DisplayName Dialogue_TextPanel Daughter>> 
@@ -241,8 +290,9 @@ Haha… don’t be silly. I’m not hiding anything from you!
 	{$ellipsis}
 	Look, I don’t have time for this. I’ve got to go-
     I’m sorry. We’ll talk another time!
+    << ShowPose DiningRoomScene DAUGHTERDISAPPEAR>> 
     << DisplayName Dialogue_TextPanel Grandfather>> 
-    {$ellipsis}
+    Hold on!
 	*Sigh*
 	This was to be expected.
 	Maybe I’ll have better luck with phoning my friends.
@@ -259,6 +309,7 @@ Haha… don’t be silly. I’m not hiding anything from you!
     !!!
 	Look, forget I said anything alright?
 	I’ve got to go now, or I’m going to be late!
+    << ShowPose DiningRoomScene DAUGHTERDISAPPEAR>> 
     << DisplayName Dialogue_TextPanel Grandfather>> 
     Wait. Amanda-
 	No… I…!
@@ -269,14 +320,27 @@ Haha… don’t be silly. I’m not hiding anything from you!
 title: Scene_2.1
 tags: 
 colorID: 0
-position: 1529,-362
+position: 1529,-364
 ---
+<< BlackenIn EffectManager 0.25>> 
+<< LoadScene SceneManager FRONTDOORAREA>> 
+<< UseDialoguePositionSet2 FrontDoorAreaScene>> 
+<< ShowPose FrontDoorAreaScene CONFUSED>> 
+<< wait 0.25>> 
 << DisplayName Dialogue_TextPanel Grandfather>> 
+<< BlackenOut EffectManager 0.25>> 
 *Deep breaths*
 Let’s begin.
 I’ve got a long day ahead of me.
+Alright, let's who's first.
+Hmm... Louis...
+<< BlackenIn EffectManager 0.5>> 
+<< wait 1>> 
+<< ShowPose FrontDoorAreaScene PHONETALK>> 
+<< BlackenOut EffectManager 0.25>> 
 {$ellipsis}
 Okay. Thank you. Bye.
+<< ShowPose FrontDoorAreaScene PHONESTARE>> 
 *Sigh*
 Still no luck. I’ve tried about 10 people and none of them remember anything about my career.
 Should I just give up?
@@ -284,6 +348,7 @@ Should I just give up?
 No. I’ll try once more.
 Hmm… Alwyn.
 *Dials number*
+<< ShowPose FrontDoorAreaScene PHONETALK>> 
 << DisplayName Dialogue_TextPanel Phone>> 
 *Ring Ring*
 << DisplayName Dialogue_TextPanel Alwyn>> 
@@ -349,8 +414,9 @@ Wow! Long time no see. How have you been?
 title: Scene_2.2
 tags: 
 colorID: 0
-position: 1797,-359
+position: 1795,-359
 ---
+<< ShowPose FrontDoorAreaScene PHONETALK>> 
 << DisplayName Dialogue_TextPanel Alwyn>> 
 Alright. Go ahead.
 << DisplayName Dialogue_TextPanel Grandfather>> 
@@ -383,6 +449,7 @@ tags:
 colorID: 0
 position: 2076,-492
 ---
+<< ShowPose FrontDoorAreaScene PHONETALK>> 
 << DisplayName Dialogue_TextPanel Grandfather>> 
 Sorry, I don’t remember much as well.
 << DisplayName Dialogue_TextPanel Alwyn>> 
@@ -397,9 +464,10 @@ You have your children, don’t you?
 You should try asking them instead.
 I’m sorry.
 << DisplayName Dialogue_TextPanel Grandfather>> 
-Really, it’s  okay, I understand.
+It’s okay! I understand.
 << if $paulListenedToAlwyn is 1>>
 << set $paulKnowsCrash to 1>> 
+<< DisplayName Dialogue_TextPanel Alwyn>> 
 You know what?
 Since you took your time to listen to me ramble just now, let me try to remember one more time.
 This time I’ll put in my 300% effort!
@@ -425,15 +493,17 @@ She isn’t too keen on helping me.
 Ah. I see. Good luck! It was nice chatting with you.
 << DisplayName Dialogue_TextPanel Grandfather>> 
 Likewise, goodbye.
+<< ShowPose FrontDoorAreaScene PHONESTARE>> 
 A crash, huh…
+<< ShowPose FrontDoorAreaScene SUPERCONFUSED>> 
 Did I cause a crash and forget about it?!
 {$ellipsis}
 Enough speculating, I should call my son right away.
 << else>> 
 << DisplayName Dialogue_TextPanel Alwyn>> 
-I’m really sorry I couldn’t help, but good luck with your search.
+Still I’m really sorry I couldn’t help, but good luck with your search.
 << DisplayName Dialogue_TextPanel Grandfather>> 
-It’s okay. It’s not your fault.
+Don't worry. It’s not your fault.
 Anyways, I’ll talk to you later. I’m going to call my son now to see if he knows anything.
 << DisplayName Dialogue_TextPanel Alwyn>> 
 Son? What about your daughter?
@@ -443,6 +513,7 @@ She isn’t too keen on helping me.
 Ah. I see. Good luck! It was nice chatting with you.
 << DisplayName Dialogue_TextPanel Grandfather>> 
 Likewise, goodbye.
+<< ShowPose FrontDoorAreaScene PHONESTARE>> 
 Hopefully my son has answers, I’m running out of options!
 << endif>>
 [[Scene_2.3]]
@@ -450,8 +521,9 @@ Hopefully my son has answers, I’m running out of options!
 title: Scene_2.2B
 tags: 
 colorID: 0
-position: 2076,-235
+position: 2074,-237
 ---
+<< ShowPose FrontDoorAreaScene PHONETALK>> 
 << DisplayName Dialogue_TextPanel Grandfather>> 
 Was it that bad?
 << DisplayName Dialogue_TextPanel Alwyn>> 
@@ -471,8 +543,9 @@ Anyways, going back on topic, do you have anything that can jolt my memory?
 title: Scene_2.2C
 tags: 
 colorID: 0
-position: 2335,-364
+position: 2344,-362
 ---
+<< ShowPose FrontDoorAreaScene PHONETALK>> 
 << set $paulKnowsCrash to 1>> 
 << DisplayName Dialogue_TextPanel Grandfather>> 
 I think it might have involved an accident of some kind.
@@ -495,7 +568,9 @@ She isn’t too keen on helping me.
 Ah. I see. Good luck! It was nice chatting with you.
 << DisplayName Dialogue_TextPanel Grandfather>> 
 Likewise, goodbye.
+<< ShowPose FrontDoorAreaScene PHONESTARE>> 
 A crash, huh…
+<< ShowPose FrontDoorAreaScene SUPERCONFUSED>> 
 Did I cause a crash and forget about it?!
 {$ellipsis}
 Enough speculating, I should call my son right away.
@@ -504,12 +579,14 @@ Enough speculating, I should call my son right away.
 title: Scene_2.3
 tags: 
 colorID: 0
-position: 2646,-360
+position: 2646,-362
 ---
+<< ShowPose FrontDoorAreaScene PHONESTARE>> 
 << DisplayName Dialogue_TextPanel Grandfather>> 
 *Deep breaths*
 Please help me, son!
 Well, here goes nothing.
+<< ShowPose FrontDoorAreaScene PHONETALK>> 
 << DisplayName Dialogue_TextPanel Phone>> 
 *Ring Ring*
 << DisplayName Dialogue_TextPanel Son>> 
@@ -644,6 +721,7 @@ I agree with her, I also feel that it would probably better if you did.
 Thanks for your help.
 << DisplayName Dialogue_TextPanel Son>> 
 Dad, I-
+<< ShowPose FrontDoorAreaScene PHONESTARE>> 
 << DisplayName Dialogue_TextPanel None>> 
 *Click*
 << DisplayName Dialogue_TextPanel Grandfather>> 
@@ -654,7 +732,7 @@ I’m just going to lie down for a while.
 title: Scene_2.3B
 tags: 
 colorID: 0
-position: 2922,-254
+position: 2922,-256
 ---
 << set $paulGetsCrashDetails to 1>> 
 << DisplayName Dialogue_TextPanel Son>> 
@@ -668,7 +746,7 @@ She prefers it to be just water under the bridge.
 Anyways, there’s no easy way to say this but…
 You were involved in a fatal crash.
 << DisplayName Dialogue_TextPanel Grandfather>> 
-A fatal crash?
+Fatal?!
 << DisplayName Dialogue_TextPanel Son>> 
 Yes.
 And after being rescued, you decided to quit there and then.
@@ -680,21 +758,29 @@ Yes dad. That’s why Amanda and I were shocked when you seemed to have forgotte
 And we’ve been trying to keep it that way for years because you became a lot happier.
 << DisplayName Dialogue_TextPanel Grandfather>> 
 This… this is a lot to take in. How could I have forgotten such an important thing?
-Do you remember what the flight number of the plane was?
+Do you remember anything about the plane crash?
+<< DisplayName Dialogue_TextPanel Son>> 
+What do you want to know?
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+Let's see...
+Like the flight number of the plane so I can find more information about it later.
 << DisplayName Dialogue_TextPanel Son>> 
 Umm…
 Not off the top of my head. But I do remember the number being around two thousand something.
 I’m pretty sure Amanda remembers this better than me.
 << DisplayName Dialogue_TextPanel Grandfather>> 
 Okay. Thanks son.
+You know what? I think I'll... go and lie down for a bit now.
 << DisplayName Dialogue_TextPanel Son>> 
 No problem dad… just… call me if you need help, okay?
 << DisplayName Dialogue_TextPanel Grandfather>> 
 Will do. Goodbye.
 << DisplayName Dialogue_TextPanel Son>> 
 Bye.
+<< ShowPose FrontDoorAreaScene PHONESTARE>> 
 << DisplayName Dialogue_TextPanel Phone>> 
 *Click*
+<< ShowPose FrontDoorAreaScene SUPERCONFUSED>> 
 << DisplayName Dialogue_TextPanel Grandfather>> 
 {$ellipsis}
 This is too much information for me to process right now…
@@ -704,9 +790,14 @@ I’m just going to lie down for a bit.
 title: Scene_3
 tags: 
 colorID: 0
-position: 3213,-357
+position: 3214,-367
 ---
+<< BlackenIn EffectManager 0.25>> 
+<< LoadScene SceneManager BEDROOM>> 
+<< ShowPose BedRoomScene WAKEUP>> 
+<< wait 1>> 
 << DisplayName Dialogue_TextPanel Grandfather>> 
+<< BlackenOut EffectManager 0.25>> 
 zzz
 << DisplayName Dialogue_TextPanel Daughter>> 
 Dad? Are you awake? Dinner’s ready.
@@ -716,14 +807,21 @@ Dad? Are you awake? Dinner’s ready.
 << DisplayName Dialogue_TextPanel Daughter>> 
 Around 8, I think.
 << DisplayName Dialogue_TextPanel Grandfather>> 
-Okay... I’ll be at the table in 5 minutes.
+8?!
+Wow, I overslept.
+I’ll be at the table in 5 minutes, let me prepare myself first.
 << DisplayName Dialogue_TextPanel Daughter>> 
-Alright, please eat before the food gets cold.
+O-Okay... 
+Please come before the food gets cold.
 << DisplayName Dialogue_TextPanel Grandfather>> 
 I will.
+<< ShowPose BedRoomScene REST>> 
 {$ellipsis}
 I didn’t expect to sleep till this late…
 This is bad. I don’t have much time to prepare myself.
+<< UseDialoguePositionSet2 BedRoomScene>> 
+<< ShowPose BedRoomScene SIT>> 
+<< DisplayName Dialogue_TextPanel Grandfather>> 
 *Tsk*
 This is my last chance today to get my daughter to tell me the truth.
 Let’s review what I know.
@@ -744,6 +842,7 @@ Let’s review what I know.
     But Amanda keeps interfering with my investigation. She even told Ryan to keep silent about this! Why?
 << endif>> 
 << if $paulKnowsSomethingAboutCrash is 0>> 
+    {$ellipsis}
     I can’t believe it. I still don’t know anything about how I retired!
     {$ellipsis}
     This is to be expected, that’s no way I’ll be able to discover everything in one day. I still have tomorrow…
@@ -751,22 +850,35 @@ Let’s review what I know.
 Either way. I should get going now before Amanda nags at me again. 
 *Deep breaths*
 Let’s do this.
+<< BlackenIn EffectManager 0.25>> 
+<< LoadScene SceneManager DININGROOM>> 
+<< ShowPose DiningRoomScene DINNER>> 
+<< wait 0.25>> 
+<< DisplayName Dialogue_TextPanel Grandfather>> 
+<< BlackenOut EffectManager 0.25>> 
 {$ellipsis}
 So, Amanda.
+<< DisplayName Dialogue_TextPanel Daughter>> 
 {$ellipsis}Yes?
 [[Scene_3.1]]
 ===
 title: Scene_3.1
 tags: 
 colorID: 0
-position: 3477,-360
+position: 3478,-366
 ---
-<< DisplayName Dialogue_TextPanel Daughter>> 
 -> I want to know why I retired.
+    << LoadScene SceneManager DININGROOMCLOSEUP>> 
+    << UseDialoguePositionSet1 DiningRoomCloseUpScene>> 
+    << ShowPose DiningRoomCloseUpScene QUESTIONSTART>> 
+    << DisplayName Dialogue_TextPanel Grandfather>> 
     I want to know why I retired.
     << DisplayName Dialogue_TextPanel Daughter>> 
     This again?
 -> I was involved in an accident, wasn’t I? << if $paulHeardOfAccident is 1>>
+    << LoadScene SceneManager DININGROOMCLOSEUP>> 
+    << UseDialoguePositionSet1 DiningRoomCloseUpScene>> 
+    << ShowPose DiningRoomCloseUpScene QUESTIONSTART>> 
     << set $amandaKnowsPaulKnowsAccident to 1>> 
     << DisplayName Dialogue_TextPanel Grandfather>> 
     I was involved in an accident, wasn’t I?
@@ -774,6 +886,9 @@ position: 3477,-360
     Haha. An accident?
     What are you talking about?
 -> I retired after a plane crash, didn’t I? << if $paulKnowsCrash is 1>>
+    << LoadScene SceneManager DININGROOMCLOSEUP>> 
+    << UseDialoguePositionSet1 DiningRoomCloseUpScene>> 
+    << ShowPose DiningRoomCloseUpScene QUESTIONSTART>> 
     << set $amandaKnowsPaulKnowsCrash to 1>>    
     << DisplayName Dialogue_TextPanel Grandfather>> 
     I retired after a plane crash, didn’t I?
@@ -786,7 +901,7 @@ You should hurry up and eat. Your food’s cold already.
 *Deep breaths*
 Amanda, I’m being serious here.
 I don’t understand why you keep dodging the question.
-I’m starting to get mad.
+I’m starting to get mad!
 Why won’t you tell me?
 << DisplayName Dialogue_TextPanel Daughter>> 
 I… I…
@@ -836,10 +951,12 @@ How can I get you to believe me?
 {$ellipsis}
 Forget about it.
 I’m done here.
+<< UseDialoguePositionSet2 DiningRoomCloseUpScene>> 
+<< ShowPose DiningRoomCloseUpScene RAGEQUIT>> 
 << DisplayName Dialogue_TextPanel Daughter>> 
 No! Wait!
 << DisplayName Dialogue_TextPanel Grandfather>> 
-What?
+WHAT?
 << DisplayName Dialogue_TextPanel Daughter>> 
 I…
 {$ellipsis}
@@ -848,10 +965,10 @@ It wasn’t your fault, okay?
 So please, stop diving into this further!
 It will only end badly, I-
 << DisplayName Dialogue_TextPanel Grandfather>> 
-I can very well decide if it’s my own fault myself, okay?
+I CAN VERY WELL DECIDE IF IT'S MY OWN FAULT MYSELF, OKAY?
 So please…
 Tell me what happened.
-Now.
+NOW.
 << DisplayName Dialogue_TextPanel Daughter>> 
 *Sobs*
 Okay I will, just please sit back down and calm down for a while, okay?
@@ -863,8 +980,10 @@ Okay.
 title: Scene_3.2
 tags: 
 colorID: 0
-position: 3729,-360
+position: 3729,-364
 ---
+<< UseDialoguePositionSet1 DiningRoomCloseUpScene>> 
+<< ShowPose DiningRoomCloseUpScene CONFESSION>> 
 << DisplayName Dialogue_TextPanel Grandfather>> 
 {$ellipsis}
 Listen, Amanda…
@@ -893,18 +1012,20 @@ So, tell me… what happened that led to my retirement?
     Hmm…
     I remember you were piloting a regional airliner and it crashed into the ocean.
     << DisplayName Dialogue_TextPanel Grandfather>> 
-    Oh no. Were there any casualties?
+    Seriously?
+    Were there any casualties?
     << DisplayName Dialogue_TextPanel Daughter>> 
     Erm…
     Yes, unfortunately.
     << DisplayName Dialogue_TextPanel Grandfather>>     
-    Oh god, how many?
+    Oh god. How many?
     << DisplayName Dialogue_TextPanel Daughter>> 
     I’m sorry I don’t remember…
     << DisplayName Dialogue_TextPanel Grandfather>>
     That’s okay. Do you remember anything else?
     << DisplayName Dialogue_TextPanel Daughter>> 
     Umm…
+    << ShowPose DiningRoomCloseUpScene ENDCONFESSION>> 
     No, sorry.
     << DisplayName Dialogue_TextPanel Grandfather>>
     I see...
@@ -1004,6 +1125,7 @@ Umm…
     Ah… That’s okay.
     But wow, that’s quite a bit of information to take in.
 << endif>> 
+<< ShowPose DiningRoomCloseUpScene ENDCONFESSION>> 
 << DisplayName Dialogue_TextPanel Daughter>> 
 I’m sorry dad. I… this was why I didn’t want to tell you what had happened.
 << DisplayName Dialogue_TextPanel Grandfather>> 
@@ -1026,9 +1148,14 @@ Goodnight.
 title: Scene_4
 tags: 
 colorID: 0
-position: 4257,-364
+position: 4257,-366
 ---
+<< BlackenIn EffectManager 0.25>> 
+<< LoadScene SceneManager BEDROOM>> 
+<< ShowPose BedRoomScene SIT>> 
+<< wait 0.5>> 
 << DisplayName Dialogue_TextPanel Grandfather>> 
+<< BlackenOut EffectManager 0.25>> 
 *Sigh*
 Maybe…
 Maybe it’s for the better if I just stopped the investigation here.
@@ -1046,4 +1173,5 @@ I don’t want that to happen obviously.
 Let’s see what kind of conclusion I can come up with from the information I have.
 {$ellipsis}And I’ll just accept that as the truth and move on.
 Alright, let’s see…
+<< BlackenIn EffectManager 2>>
 ===
