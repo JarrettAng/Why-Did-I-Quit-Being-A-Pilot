@@ -9,6 +9,10 @@ public class FrontDoorAreaScene : Scene
     [SerializeField] protected DialoguePosition[] set1 = default;
     [SerializeField] protected DialoguePosition[] set2 = default;
 
+    [Header("Object Sets")]
+    [SerializeField] protected GameObject objectSet1 = default;
+    [SerializeField] protected GameObject objectSet2 = default;
+
     [Header("Poses Set 1")]
     [SerializeField] private GameObject poseSet1 = default;
     [SerializeField] private GameObject grandfather = default;
@@ -39,6 +43,18 @@ public class FrontDoorAreaScene : Scene
     public void UseDialoguePositionSet2() {
         dialoguePositions = new List<DialoguePosition>(set2);
         InitializeDialoguePositionsDictionary();
+    }
+
+    [YarnCommand("UseObjectSet1")]
+    public void UseObjectSet1() {
+        objectSet1.SetActive(true);
+        objectSet2.SetActive(false);
+    }
+
+    [YarnCommand("UseObjectSet2")]
+    public void UseObjectSet2() {
+        objectSet1.SetActive(false);
+        objectSet2.SetActive(true);
     }
 
     [YarnCommand("ShowPose")]

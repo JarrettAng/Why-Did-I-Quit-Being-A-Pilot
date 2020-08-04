@@ -9,6 +9,10 @@ public class LivingRoomScene : Scene
     [SerializeField] protected DialoguePosition[] set1 = default;
     [SerializeField] protected DialoguePosition[] set2 = default;
 
+    [Header("Object Sets")]
+    [SerializeField] protected GameObject objectSet1 = default;
+    [SerializeField] protected GameObject objectSet2 = default;
+
     [Header("Poses")]
     [SerializeField] private GameObject read = default;
     [SerializeField] private GameObject walk = default;
@@ -29,6 +33,18 @@ public class LivingRoomScene : Scene
     public void UseDialoguePositionSet2() {
         dialoguePositions = new List<DialoguePosition>(set2);
         InitializeDialoguePositionsDictionary();
+    }
+
+    [YarnCommand("UseObjectSet1")]
+    public void UseObjectSet1() {
+        objectSet1.SetActive(true);
+        objectSet2.SetActive(false);
+    }
+
+    [YarnCommand("UseObjectSet2")]
+    public void UseObjectSet2() {
+        objectSet1.SetActive(false);
+        objectSet2.SetActive(true);
     }
 
     [YarnCommand("ShowPose")]

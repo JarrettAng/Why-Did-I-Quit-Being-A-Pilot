@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
 
-public class SceneManager : Singleton<SceneManager>
+public class StorySceneManager : Singleton<StorySceneManager>
 {
     [Header("References")]
     [SerializeField] private Scene[] scenes = default;

@@ -10,11 +10,11 @@ public class DialogueDisplay : MonoBehaviour
     [SerializeField] private TextMeshProUGUI nameText = default;
     [SerializeField] private TextMeshProUGUI contentText = default;
 
-    private SceneManager sceneManager;
+    private StorySceneManager sceneManager;
     private RectTransform rectTransform;
 
     private void Awake() {
-        sceneManager = SceneManager.Instance;
+        sceneManager = StorySceneManager.Instance;
         rectTransform = GetComponent<RectTransform>();
     }
 
