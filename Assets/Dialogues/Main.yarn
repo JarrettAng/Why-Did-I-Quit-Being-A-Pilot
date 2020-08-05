@@ -1177,6 +1177,7 @@ position: 4257,-366
 << BlackenIn EffectManager 0.25>> 
 << LoadScene SceneManager BEDROOM>> 
 << UseObjectSet1 BedRoomScene>> 
+<< UseDialoguePositionSet2 BedRoomScene>> 
 << ShowPose BedRoomScene SIT>> 
 << wait 0.5>> 
 << DisplayName Dialogue_TextPanel Grandfather>> 
@@ -1196,5 +1197,6 @@ If I investigate any further, it’s likely I might just relapse again…
 I don’t want that to happen obviously.
 {$ellipsis}
 Alright, let’s see what kind of conclusion I can come up with using what I know... and I'll end it there.
-<< BlackenIn EffectManager 5>>
+<< BlackenIn EffectManager 3>>
+<< ShowEnding EndingTransition>>
 ===

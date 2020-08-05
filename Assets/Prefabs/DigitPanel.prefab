@@ -118,7 +118,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8200666081810272280}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2196766044231988042}
+        m_TargetAssemblyTypeName: EndingDialNumber, Assembly-CSharp
+        m_MethodName: DecreaseNumber
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1755272688574258655
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,7 +383,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6361930819341730208}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2196766044231988042}
+        m_TargetAssemblyTypeName: EndingDialNumber, Assembly-CSharp
+        m_MethodName: IncreaseNumber
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7522398552603965311
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,6 +406,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4963117848160196430}
   - component: {fileID: 5925524060421488971}
+  - component: {fileID: 2196766044231988042}
   m_Layer: 0
   m_Name: DigitPanel
   m_TagString: Untagged
@@ -419,3 +444,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7522398552603965311}
   m_CullTransparentMesh: 0
+--- !u!114 &2196766044231988042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7522398552603965311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cadf6194d78d6340baeab1d0132760e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  number: {fileID: 9106138338266064138}
+  currentNumber: 0
