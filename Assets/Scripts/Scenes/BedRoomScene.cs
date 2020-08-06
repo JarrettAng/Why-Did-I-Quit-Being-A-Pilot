@@ -12,6 +12,8 @@ public class BedRoomScene : Scene
     [Header("Object Sets")]
     [SerializeField] protected GameObject objectSet1 = default;
     [SerializeField] protected GameObject objectSet2 = default;
+    [SerializeField] protected GameObject objectSet3 = default;
+    [SerializeField] protected GameObject objectSet4 = default;
 
     [Header("Poses")]
     [SerializeField] private GameObject daughterConcern = default;
@@ -40,13 +42,34 @@ public class BedRoomScene : Scene
     public void UseObjectSet1() {
         objectSet1.SetActive(true);
         objectSet2.SetActive(false);
+        objectSet3.SetActive(false);
+        objectSet4.SetActive(false);
     }
 
     [YarnCommand("UseObjectSet2")]
     public void UseObjectSet2() {
         objectSet1.SetActive(false);
         objectSet2.SetActive(true);
+        objectSet3.SetActive(false);
+        objectSet4.SetActive(false);
     }
+
+    [YarnCommand("UseObjectSet3")]
+    public void UseObjectSet3() {
+        objectSet1.SetActive(false);
+        objectSet2.SetActive(false);
+        objectSet3.SetActive(true);
+        objectSet4.SetActive(false);
+    }
+
+    [YarnCommand("UseObjectSet4")]
+    public void UseObjectSet4() {
+        objectSet1.SetActive(false);
+        objectSet2.SetActive(false);
+        objectSet3.SetActive(false);
+        objectSet4.SetActive(true);
+    }
+
 
     [YarnCommand("ShowPose")]
     public override void ShowPose(string pose) {

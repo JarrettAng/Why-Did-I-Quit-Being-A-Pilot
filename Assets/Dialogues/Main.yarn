@@ -50,7 +50,7 @@ Thanks Ryan.
 title: Scene_1.1
 tags: 
 colorID: 0
-position: 438,-346
+position: 438,-348
 ---
 << BlackenIn EffectManager 0.25>> 
 << LoadScene SceneManager DININGROOM>> 
@@ -141,7 +141,7 @@ position: 692,-345
 {$ellipsis}
 Ever since dinner, this strange feeling still hasn’t gone away.
 *Sigh*
-I’m still bothered the fact I can’t remember why I quit.
+I’m still bothered by the fact I can’t remember why I quit.
 I remember being a pilot and absolutely loving it, and then… I’m not!
 What happened in between is so hazy!
 And why is Amanda being so aggressive?
@@ -149,13 +149,14 @@ And why is Amanda being so aggressive?
 Maybe I’ll just sleep it off.
 << BlackenIn EffectManager 1>> 
 << LoadScene SceneManager OCEAN>> 
-<< ShowPose OceanScene HANDRAISE>> 
 << wait 1>> 
 << DisplayName Dialogue_TextPanel Grandfather>> 
 << BlackenOut EffectManager 1>> 
 Huh, water?!
 Where am I?
-Goodness, I can't swim!
+Goodness, I'm sinking!
+I can't swim!
+<< ShowPose OceanScene HANDRAISE>> 
 Help! Help!
 Somebody, please! Anybody!
 {$ellipsis}
@@ -168,6 +169,7 @@ Dad…?
 << DisplayName Dialogue_TextPanel Grandfather>> 
 {$ellipsis}
 << LoadScene SceneManager BEDROOM>> 
+<< UseObjectSet4 BedRoomScene>> 
 << ShowPose BedRoomScene WAKEUP>> 
 << DisplayName Dialogue_TextPanel Daughter>> 
 Dad? Wake up! What happened?
@@ -180,7 +182,7 @@ A dream?
 I’m fine. It was just a nightmare.
 << DisplayName Dialogue_TextPanel Daughter>> 
 Okay…
-Anyways, breakfast is ready. I just wanted to remind you to eat it before it grows cold again, 
+Anyways, breakfast is ready. I just wanted to remind you to eat it before it goes cold again, 
 << DisplayName Dialogue_TextPanel Grandfather>> 
 Don’t worry, I will.
 << DisplayName Dialogue_TextPanel Daughter>> 
@@ -334,11 +336,12 @@ Haha… don’t be silly. I’m not hiding anything from you!
 title: Scene_2.1
 tags: 
 colorID: 0
-position: 1529,-364
+position: 1529,-366
 ---
 << BlackenIn EffectManager 0.25>> 
 << LoadScene SceneManager FRONTDOORAREA>> 
-<< UseDialoguePositionSet2 FrontDoorAreaScene>> 
+<< UseDialoguePositionSet1 FrontDoorAreaScene>> 
+<< UseObjectSet2 FrontDoorAreaScene>> 
 << ShowPose FrontDoorAreaScene CONFUSED>> 
 << wait 0.25>> 
 << DisplayName Dialogue_TextPanel Grandfather>> 
@@ -351,8 +354,10 @@ Hmm... Louis...
 << BlackenIn EffectManager 0.5>> 
 << wait 1>> 
 << ShowPose FrontDoorAreaScene PHONETALK>> 
-<< UseDialoguePositionSet1 FrontDoorAreaScene>> 
+<< UseDialoguePositionSet2 FrontDoorAreaScene>> 
+<< UseObjectSet1 FrontDoorAreaScene>> 
 << BlackenOut EffectManager 0.25>> 
+<< DisplayName Dialogue_TextPanel Grandfather>> 
 {$ellipsis}
 Okay. Thank you. Bye.
 << ShowPose FrontDoorAreaScene PHONESTARE>> 
@@ -429,7 +434,7 @@ Wow! Long time no see. How have you been?
 title: Scene_2.2
 tags: 
 colorID: 0
-position: 1795,-359
+position: 1795,-361
 ---
 << ShowPose FrontDoorAreaScene PHONETALK>> 
 << DisplayName Dialogue_TextPanel Alwyn>> 
@@ -462,7 +467,7 @@ The only thing I remember is something really bad happening and you stopped talk
 title: Scene_2.2A
 tags: 
 colorID: 0
-position: 2076,-492
+position: 2076,-494
 ---
 << ShowPose FrontDoorAreaScene PHONETALK>> 
 << DisplayName Dialogue_TextPanel Grandfather>> 
@@ -512,6 +517,7 @@ Likewise, goodbye.
 A crash, huh…
 << ShowPose FrontDoorAreaScene SUPERCONFUSED>> 
 << UseDialoguePositionSet2 FrontDoorAreaScene>> 
+<< UseObjectSet2 FrontDoorAreaScene>> 
 Did I cause a crash and forget about it?!
 {$ellipsis}
 Enough speculating, I should call my son right away.
@@ -569,7 +575,9 @@ I think it might have involved an accident of some kind.
 I see let me think…
 {$ellipsis}
 Oh wait. I remember something!
+<< DisplayName Dialogue_TextPanel Grandfather>> 
 Oh?
+<< DisplayName Dialogue_TextPanel Alwyn>> 
 Umm…
 All I can remember is that some kind of crash happened, and you quit.
 I’m not too sure myself, you should definitely confirm this with your children.
@@ -587,6 +595,7 @@ Likewise, goodbye.
 << ShowPose FrontDoorAreaScene PHONESTARE>> 
 A crash, huh…
 << ShowPose FrontDoorAreaScene SUPERCONFUSED>> 
+<< UseObjectSet2 FrontDoorAreaScene>> 
 << UseDialoguePositionSet2 FrontDoorAreaScene>> 
 Did I cause a crash and forget about it?!
 {$ellipsis}
@@ -599,7 +608,8 @@ colorID: 0
 position: 2646,-362
 ---
 << ShowPose FrontDoorAreaScene PHONESTARE>> 
-<< UseDialoguePositionSet1 FrontDoorAreaScene>> 
+<< UseDialoguePositionSet2 FrontDoorAreaScene>> 
+<< UseObjectSet1 FrontDoorAreaScene>> 
 << DisplayName Dialogue_TextPanel Grandfather>> 
 *Deep breaths*
 Please help me, son!
@@ -781,7 +791,7 @@ Do you remember anything about the plane crash?
 What do you want to know?
 << DisplayName Dialogue_TextPanel Grandfather>> 
 Let's see...
-Like the flight number of the plane so I can find more information about it later.
+Perhaps the flight number of the plane so I can find more information about it later.
 << DisplayName Dialogue_TextPanel Son>> 
 Umm…
 Not off the top of my head. But I do remember the number being around two thousand something.
@@ -800,6 +810,7 @@ Bye.
 *Click*
 << ShowPose FrontDoorAreaScene SUPERCONFUSED>> 
 << UseDialoguePositionSet2 FrontDoorAreaScene>> 
+<< UseObjectSet2 FrontDoorAreaScene>> 
 << DisplayName Dialogue_TextPanel Grandfather>> 
 {$ellipsis}
 This is too much information for me to process right now…
@@ -811,7 +822,7 @@ tags:
 colorID: 0
 position: 3214,-369
 ---
-<< BlackenIn EffectManager 0.25>> 
+<< BlackenIn EffectManager 0.5>> 
 << LoadScene SceneManager BEDROOM>> 
 << ShowPose BedRoomScene WAKEUP>> 
 << UseObjectSet2 BedRoomScene>> 
@@ -848,11 +859,11 @@ This is my last chance today to get my daughter to tell me the truth.
 Let’s review what I know.
 << if $paulHeardOfAccident is 1>> 
     << set $paulKnowsSomethingAboutCrash to 1>> 
-    I was involved in some kind of accident that led me to retire.
+    Some kind of accident that led me to retire.
 << endif>> 
 << if $paulKnowsCrash is 1>> 
     << set $paulKnowsSomethingAboutCrash to 1>> 
-    And that accident was a plane crash, which I survived but remember nothing about.
+    I was involved a plane crash, which I survived but remember nothing about.
 << endif>> 
 << if $paulGetsCrashDetails is 1>> 
     << set $paulKnowsSomethingAboutCrash to 1>> 
@@ -860,7 +871,7 @@ Let’s review what I know.
 << endif>> 
 << if $sonCallRejected is 1>> 
     << set $paulKnowsSomethingAboutCrash to 1>> 
-    But Amanda keeps interfering with my investigation. She even told Ryan to keep silent about this! Why?
+    Amanda keeps interfering with my investigation. She even told Ryan to keep silent about this! Why?
 << endif>> 
 << if $paulKnowsSomethingAboutCrash is 0>> 
     {$ellipsis}
@@ -892,7 +903,7 @@ Oh.
 title: Scene_3.1
 tags: 
 colorID: 0
-position: 3478,-366
+position: 3478,-370
 ---
 -> I want to know why I retired.
     << LoadScene SceneManager DININGROOMCLOSEUP>> 
@@ -926,7 +937,7 @@ position: 3478,-366
     !!!
     N…No…
     Ah…
-You should hurry up and eat. Your food’s cold already.
+I should be going now to wash the plates...
 << DisplayName Dialogue_TextPanel Grandfather>> 
 *Deep breaths*
 Amanda, I’m being serious here.
@@ -1011,8 +1022,11 @@ Okay.
 title: Scene_3.2
 tags: 
 colorID: 0
-position: 3729,-364
+position: 3729,-368
 ---
+<< BlackenIn EffectManager 0.25>> 
+<<  wait 0.5>> 
+<< BlackenOut EffectManager 0.25>> 
 << UseDialoguePositionSet1 DiningRoomCloseUpScene>> 
 << UseObjectSet1 DiningRoomCloseUpScene>> 
 << ShowPose DiningRoomCloseUpScene CONFESSION>> 

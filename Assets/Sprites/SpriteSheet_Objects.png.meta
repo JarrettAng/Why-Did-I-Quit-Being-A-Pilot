@@ -1,0 +1,652 @@
+fileFormatVersion: 2
+guid: 37929049073f78d4e8d08efd8b2a66fe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7048197284854151659
+    second: BG_LivingRoom_Table
+  - first:
+      213: 8890614718960195264
+    second: BG_LivingRoom_Book
+  - first:
+      213: -3677873194483567678
+    second: BG_BedRoom_PillowRested
+  - first:
+      213: 8668606861702973106
+    second: BG_BedRoom_Normal
+  - first:
+      213: 7362508757088238564
+    second: BG_BedRoom_WindowMorning
+  - first:
+      213: -6954825503031380392
+    second: BG_DiningRoom_ChairCloser
+  - first:
+      213: -8963925223818332707
+    second: BG_DiningRoomCloseUp_ChairFurtherOut
+  - first:
+      213: 8667250905939347485
+    second: BG_DiningRoom_ChairFurther
+  - first:
+      213: -4306910474288068263
+    second: SpriteSheet_Objects_8
+  - first:
+      213: 7513624141200220825
+    second: SpriteSheet_Objects_9
+  - first:
+      213: 3473859442675164974
+    second: SpriteSheet_Objects_10
+  - first:
+      213: -7675370915682766682
+    second: BG_BedRoom_WindowNight
+  - first:
+      213: 8846189745325578686
+    second: BG_DiningRoom_ChairCloserOut
+  - first:
+      213: 4042424095055452843
+    second: BG_DiningRoomCloseUp_ChairFurther
+  - first:
+      213: 920937542342985199
+    second: SpriteSheet_Objects_14
+  - first:
+      213: 8324214117138345469
+    second: SpriteSheet_Objects_15
+  - first:
+      213: -3346409906455868727
+    second: BG_DiningRoomCloseUp_ChairCloser
+  - first:
+      213: 5477319575530605713
+    second: BG_FrontDoorArea_PhoneDocked
+  - first:
+      213: -3509376627335128041
+    second: BG_FrontDoorArea_PhoneEmpty
+  - first:
+      213: 1233479186812937180
+    second: BG_DiningRoom_BottomRightPlate
+  - first:
+      213: -3034480241750252223
+    second: BG_DiningRoom_TopLeftPlate
+  - first:
+      213: 5348697769584287210
+    second: BG_DiningRoom_TopRightPlate
+  - first:
+      213: 7927777739452764793
+    second: SpriteSheet_Objects_22
+  - first:
+      213: -3957487037366574940
+    second: BG_DiningRoom_BottomLeftPlate
+  - first:
+      213: -723524182269014006
+    second: BG_DiningRoomCloseUp_TopPlate
+  - first:
+      213: -8790492240361899367
+    second: BG_DiningRoomCloseUp_BottomPlate
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BG_LivingRoom_Table
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1007
+        width: 571
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516456199e5cf2e90800000000000000
+      internalID: -7048197284854151659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_LivingRoom_Book
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1167
+        width: 130
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c65b7e7bfec16b70800000000000000
+      internalID: 8890614718960195264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_BedRoom_PillowRested
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 1060
+        width: 230
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c330e9d0d195fcc0800000000000000
+      internalID: -3677873194483567678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_BedRoom_Normal
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 1078
+        width: 218
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6c15133041d4870800000000000000
+      internalID: 8668606861702973106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_BedRoom_WindowMorning
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 729
+        width: 762
+        height: 499
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb72f1d4b2ec2660800000000000000
+      internalID: 7362508757088238564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_DiningRoom_ChairCloser
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 502
+        width: 467
+        height: 463
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856bcf0ad0f7b7f90800000000000000
+      internalID: -6954825503031380392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_DiningRoomCloseUp_ChairFurtherOut
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 657
+        width: 531
+        height: 287
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5f429708db99380800000000000000
+      internalID: -8963925223818332707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_DiningRoom_ChairFurther
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 560
+        width: 179
+        height: 340
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1882b327c2484870800000000000000
+      internalID: 8667250905939347485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_BedRoom_WindowNight
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 220
+        width: 769
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a03d5b61da9b7590800000000000000
+      internalID: -7675370915682766682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_DiningRoom_ChairCloserOut
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 33
+        width: 469
+        height: 463
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb995d944baf3ca70800000000000000
+      internalID: 8846189745325578686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_DiningRoomCloseUp_ChairFurther
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 275
+        width: 600
+        height: 367
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baa9249fb43991830800000000000000
+      internalID: 4042424095055452843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_DiningRoomCloseUp_ChairCloser
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 16
+        width: 635
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca89dc8be92f81d0800000000000000
+      internalID: -3346409906455868727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_FrontDoorArea_PhoneDocked
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 106
+        width: 48
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c8bc44229530c40800000000000000
+      internalID: 5477319575530605713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_FrontDoorArea_PhoneEmpty
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 104
+        width: 46
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c91a80d803c4fc0800000000000000
+      internalID: -3509376627335128041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_DiningRoom_BottomRightPlate
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 132
+        width: 190
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3a2dff8c23e1110800000000000000
+      internalID: 1233479186812937180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_DiningRoom_TopLeftPlate
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 128
+        width: 142
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 145e8882c4c53e5d0800000000000000
+      internalID: -3034480241750252223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_DiningRoom_TopRightPlate
+      rect:
+        serializedVersion: 2
+        x: 1877
+        y: 130
+        width: 154
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeddef668446a3a40800000000000000
+      internalID: 5348697769584287210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_DiningRoom_BottomLeftPlate
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 14
+        width: 175
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a06d86d18e2419c0800000000000000
+      internalID: -3957487037366574940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_DiningRoomCloseUp_TopPlate
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 4
+        width: 233
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a005371f69685f5f0800000000000000
+      internalID: -723524182269014006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_DiningRoomCloseUp_BottomPlate
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 5
+        width: 233
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ab664a1e5e10680800000000000000
+      internalID: -8790492240361899367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
