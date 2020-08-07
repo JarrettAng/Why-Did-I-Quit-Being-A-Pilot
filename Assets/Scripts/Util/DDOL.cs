@@ -16,6 +16,7 @@ public class DDOL : Singleton<DDOL>
                 return;
             }
 
+            gameObject.SetActive(false);
             Destroy(gameObject);
         }
     }

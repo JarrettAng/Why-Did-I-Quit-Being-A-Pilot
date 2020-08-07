@@ -14,9 +14,13 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
             }
 
             var instances = FindObjectsOfType<T>();
-            var count = instances.Length;
+            int count = instances.Length;
 
             if(count > 0) {
+                for(int index = 1; index < count; index++) {
+                    if(instances[index].gameObject.activeSelf) return instances[index];
+                }
+
                 return instance = instances[0];
             }
 

@@ -6,6 +6,7 @@ using TMPro;
 public class EndingManager : Singleton<EndingManager>
 {
     [Header("References")]
+    [SerializeField] private EndingSoundEffects endingSoundEffects = default;
     [SerializeField] private TextMeshProUGUI line1 = default;
     [SerializeField] private TextMeshProUGUI line2 = default;
     [SerializeField] private TextMeshProUGUI line3 = default;
@@ -48,6 +49,8 @@ public class EndingManager : Singleton<EndingManager>
         line4.gameObject.SetActive(false);
         finalLine.gameObject.SetActive(false);
 
+        SoundManager.Instance.PlayMenuMusic();
+
         EndingEffectManager.Instance.BlackenOut(0.5f);
         StartCoroutine(HandleLine1());
     }
@@ -82,6 +85,9 @@ public class EndingManager : Singleton<EndingManager>
             UpdateLine();
             yield return textWaitTime;
         }
+
+        // SoundEffect to signal new line
+        endingSoundEffects.PlayNewLineSound();
 
         yield return lineWaitTime;
         StartCoroutine(HandleLine2());
@@ -131,6 +137,9 @@ public class EndingManager : Singleton<EndingManager>
             yield return textWaitTime;
         }
 
+        // SoundEffect to signal new line
+        endingSoundEffects.PlayNewLineSound();
+
         yield return lineWaitTime;
         StartCoroutine(HandleLine3());
     }
@@ -179,6 +188,9 @@ public class EndingManager : Singleton<EndingManager>
             yield return textWaitTime;
         }
 
+        // SoundEffect to signal new line
+        endingSoundEffects.PlayNewLineSound();
+
         yield return lineWaitTime;
         StartCoroutine(HandleLine4());
     }
@@ -195,6 +207,9 @@ public class EndingManager : Singleton<EndingManager>
             yield return textWaitTime;
         }
 
+        // SoundEffect to signal new line
+        endingSoundEffects.PlayNewLineSound();
+
         yield return lineWaitTime;
         StartCoroutine(HandleLine5());
     }
@@ -210,9 +225,14 @@ public class EndingManager : Singleton<EndingManager>
             UpdateLine();
             yield return textWaitTime;
         }
+
+        // SoundEffect to signal new line
+        endingSoundEffects.PlayNewLineSound();
     }
 
     private void UpdateLine() {
+        endingSoundEffects.PlayRandomTypeSound();
+
         currentLineToUpdate.text = currentTextDisplayed;
     }
 }

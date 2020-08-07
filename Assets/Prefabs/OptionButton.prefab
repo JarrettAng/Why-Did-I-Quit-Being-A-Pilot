@@ -169,6 +169,7 @@ GameObject:
   - component: {fileID: 352659975128905105}
   - component: {fileID: 6983415385346865458}
   - component: {fileID: 5365894962769104529}
+  - component: {fileID: 7369567885796162546}
   m_Layer: 5
   m_Name: OptionButton
   m_TagString: Untagged
@@ -276,7 +277,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3512442376169933747}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7369567885796162546}
+        m_TargetAssemblyTypeName: GameButton, Assembly-CSharp
+        m_MethodName: PlayButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6983415385346865458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,3 +330,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
+--- !u!114 &7369567885796162546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8918637005832200232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f777c3295a8a4194fb57458eba12484c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

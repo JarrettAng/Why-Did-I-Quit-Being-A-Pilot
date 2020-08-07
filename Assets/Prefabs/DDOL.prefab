@@ -75,7 +75,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4225173447419465593}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8842767649730039320
 MonoBehaviour:
@@ -89,7 +89,135 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a026a13356d37c24b9dbfaddbe0342cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  musicMixer: {fileID: 364608297533942883, guid: 432dd5ea3b82fae42bfc25408bfb6564, type: 2}
+  sfxMixer: {fileID: -1163148210512150734, guid: 432dd5ea3b82fae42bfc25408bfb6564, type: 2}
+  sounds:
+  - Name: CalmMusic
+    AudioMixerGroup: {fileID: 364608297533942883, guid: 432dd5ea3b82fae42bfc25408bfb6564, type: 2}
+    Clip: {fileID: 8300000, guid: f39735dc496d083479e18f85724637a9, type: 3}
+    Volume: 0.3
+    Pitch: 1
+    Loop: 1
+    Source: {fileID: 0}
+  - Name: ConcernMusic
+    AudioMixerGroup: {fileID: 364608297533942883, guid: 432dd5ea3b82fae42bfc25408bfb6564, type: 2}
+    Clip: {fileID: 8300000, guid: 7adbb6ffc4a46ed41947dd26fbbcc51a, type: 3}
+    Volume: 0.3
+    Pitch: 1
+    Loop: 1
+    Source: {fileID: 0}
+  - Name: MenuMusic
+    AudioMixerGroup: {fileID: 364608297533942883, guid: 432dd5ea3b82fae42bfc25408bfb6564, type: 2}
+    Clip: {fileID: 8300000, guid: be67a0927ff154e47b1e7135eca62b54, type: 3}
+    Volume: 0.3
+    Pitch: 1
+    Loop: 1
+    Source: {fileID: 0}
+  - Name: TenseMusic
+    AudioMixerGroup: {fileID: 364608297533942883, guid: 432dd5ea3b82fae42bfc25408bfb6564, type: 2}
+    Clip: {fileID: 8300000, guid: 6cd8280a6bfb43c468832d652c2c669d, type: 3}
+    Volume: 0.3
+    Pitch: 1
+    Loop: 1
+    Source: {fileID: 0}
+  - Name: Dialogue
+    AudioMixerGroup: {fileID: -1163148210512150734, guid: 432dd5ea3b82fae42bfc25408bfb6564, type: 2}
+    Clip: {fileID: 8300000, guid: d0c6c960eb1f3484aa125032ae0fdc45, type: 3}
+    Volume: 0.9
+    Pitch: 0.9
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: ButtonClick
+    AudioMixerGroup: {fileID: -1163148210512150734, guid: 432dd5ea3b82fae42bfc25408bfb6564, type: 2}
+    Clip: {fileID: 8300000, guid: 82388314764aa2742b8c6255fe482d1e, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: EndingPress1
+    AudioMixerGroup: {fileID: -1163148210512150734, guid: 432dd5ea3b82fae42bfc25408bfb6564, type: 2}
+    Clip: {fileID: 8300000, guid: 00ab32ebff70abc45b1113625f61e475, type: 3}
+    Volume: 0.8
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: EndingPress2
+    AudioMixerGroup: {fileID: -1163148210512150734, guid: 432dd5ea3b82fae42bfc25408bfb6564, type: 2}
+    Clip: {fileID: 8300000, guid: 0d0c88d7d2c3ae04fa4cca734ba00cd4, type: 3}
+    Volume: 0.8
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: EndingPress3
+    AudioMixerGroup: {fileID: -1163148210512150734, guid: 432dd5ea3b82fae42bfc25408bfb6564, type: 2}
+    Clip: {fileID: 8300000, guid: 061b3bbec98ef294eb1b5d4dcc3ceba9, type: 3}
+    Volume: 0.8
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: BookPlace
+    AudioMixerGroup: {fileID: -1163148210512150734, guid: 432dd5ea3b82fae42bfc25408bfb6564, type: 2}
+    Clip: {fileID: 8300000, guid: 28931bdd4bba220438fbe62d70020aed, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: ChairDrag
+    AudioMixerGroup: {fileID: -1163148210512150734, guid: 432dd5ea3b82fae42bfc25408bfb6564, type: 2}
+    Clip: {fileID: 8300000, guid: d26c37651a4dc2848a2fd94ad01071b7, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: DoorKnock
+    AudioMixerGroup: {fileID: -1163148210512150734, guid: 432dd5ea3b82fae42bfc25408bfb6564, type: 2}
+    Clip: {fileID: 8300000, guid: 3fa86911c531d2848bb2694145829398, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Footsteps
+    AudioMixerGroup: {fileID: -1163148210512150734, guid: 432dd5ea3b82fae42bfc25408bfb6564, type: 2}
+    Clip: {fileID: 8300000, guid: fe8c17fd574d7fe4ea5a50b6c670eea1, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: PhoneDial
+    AudioMixerGroup: {fileID: -1163148210512150734, guid: 432dd5ea3b82fae42bfc25408bfb6564, type: 2}
+    Clip: {fileID: 8300000, guid: 73494a8efd6e9e4418f2e3bd113e4635, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: PhoneRing
+    AudioMixerGroup: {fileID: -1163148210512150734, guid: 432dd5ea3b82fae42bfc25408bfb6564, type: 2}
+    Clip: {fileID: 8300000, guid: 44c233d64442d3d4fb395bc1cf9e3212, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: TableSlam
+    AudioMixerGroup: {fileID: -1163148210512150734, guid: 432dd5ea3b82fae42bfc25408bfb6564, type: 2}
+    Clip: {fileID: 8300000, guid: 3546d223118776a488dd0def5e1bf2b4, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: DoorClose
+    AudioMixerGroup: {fileID: -1163148210512150734, guid: 432dd5ea3b82fae42bfc25408bfb6564, type: 2}
+    Clip: {fileID: 8300000, guid: b45b82422649a2c41a7af5e5baaa2340, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: EndingNextLine
+    AudioMixerGroup: {fileID: -1163148210512150734, guid: 432dd5ea3b82fae42bfc25408bfb6564, type: 2}
+    Clip: {fileID: 8300000, guid: f5279a8b3730c6241baeaa4df63f4a27, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
 --- !u!1 &3030099467115928295
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,6 +227,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4225173447419465593}
+  - component: {fileID: 6203079352968036664}
   m_Layer: 0
   m_Name: DDOL
   m_TagString: Untagged
@@ -118,7 +247,63 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8887067115588694647}
+  - {fileID: 2537240881366957552}
   - {fileID: 4088270717464292779}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6203079352968036664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3030099467115928295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd16cf83051b02947a7d51d9bac35e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &8639154999395269562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2537240881366957552}
+  - component: {fileID: 8164863017120358562}
+  m_Layer: 0
+  m_Name: SaveManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2537240881366957552
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8639154999395269562}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4225173447419465593}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8164863017120358562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8639154999395269562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7261d68b14eb73e44a0761e9250086e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

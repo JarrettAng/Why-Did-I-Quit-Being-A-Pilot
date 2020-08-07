@@ -9,6 +9,10 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject settingsPanel = default;
     [SerializeField] private GameObject creditsPanel = default;
 
+    private void Start() {
+        SoundManager.Instance.PlayMenuMusic();
+    }
+
     public void ShowMainPanel() {
         mainPanel.SetActive(true);
         settingsPanel.SetActive(false);
