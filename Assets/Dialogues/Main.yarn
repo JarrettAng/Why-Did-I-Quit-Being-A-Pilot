@@ -209,7 +209,7 @@ But where do I even begin?
 I’ll think about it over breakfast.
 << BlackenIn EffectManager 0.25>> 
 << LoadScene SceneManager DININGROOM>> 
-<< UseObjectSet3 DININGROOM>> 
+<< UseObjectSet3 DiningRoomScene>> 
 << ShowPose DiningRoomScene BREAKFAST>> 
 << wait 0.25>> 
 << DisplayName Dialogue_TextPanel Grandfather>> 
@@ -302,6 +302,7 @@ tags:
 colorID: 0
 position: 1251,-481
 ---
+<< PlayConcernMusic SoundManager>> 
 << DisplayName Dialogue_TextPanel Grandfather>> 
 Are you hiding something from me?
 << DisplayName Dialogue_TextPanel Daughter>> 
@@ -850,7 +851,7 @@ I’m just going to lie down for a bit.
 title: Scene_3
 tags: 
 colorID: 0
-position: 3212,-373
+position: 3212,-375
 ---
 << BlackenIn EffectManager 0.5>> 
 << PlaySound SoundManager DoorClose>> 
@@ -892,11 +893,11 @@ This is my last chance today to get my daughter to tell me the truth.
 Let’s review what I know.
 << if $paulHeardOfAccident is 1>> 
     << set $paulKnowsSomethingAboutCrash to 1>> 
-    Some kind of accident that led me to retire.
+    So... some kind of accident happened which led me to retire.
 << endif>> 
 << if $paulKnowsCrash is 1>> 
     << set $paulKnowsSomethingAboutCrash to 1>> 
-    I was involved a plane crash, which I survived but remember nothing about.
+    I know I was involved a plane crash, which I survived but remember nothing about.
 << endif>> 
 << if $paulGetsCrashDetails is 1>> 
     << set $paulKnowsSomethingAboutCrash to 1>> 
@@ -979,10 +980,12 @@ position: 3478,-372
     !!!
     N…No…
     Ah…
+So... if you'll excuse me.
 I should be going now to wash the plates...
 << DisplayName Dialogue_TextPanel Grandfather>> 
 *Deep breaths*
-Amanda, I’m being serious here.
+I'm not done talking yet, Amanda.
+I’m being serious here.
 I don’t understand why you keep dodging the question.
 I’m starting to get mad!
 Why won’t you tell me?
@@ -1031,6 +1034,7 @@ That’s a lie, and we both know that.
 No! I’m not lying. That is really the case!
 How can I get you to believe me?
 << DisplayName Dialogue_TextPanel Grandfather>> 
+I should have seen this coming...
 {$ellipsis}
 Forget about it.
 I’m done here.
@@ -1053,14 +1057,16 @@ It will only end badly, I-
 << DisplayName Dialogue_TextPanel Grandfather>> 
 I CAN VERY WELL DECIDE IF IT'S MY OWN FAULT MYSELF, OKAY?
 So please…
-Tell me what happened.
+TELL ME WHAT HAPPENED.
 NOW.
 << DisplayName Dialogue_TextPanel Daughter>> 
 *Sobs*
 Okay I will, just please sit back down and calm down for a while, okay?
 << DisplayName Dialogue_TextPanel Grandfather>> 
 *Deep breaths*
+{$ellipsis}
 Okay.
+But you better tell me the truth on what happened.
 [[Scene_3.2]]
 ===
 title: Scene_3.2

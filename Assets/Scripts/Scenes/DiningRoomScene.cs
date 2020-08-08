@@ -16,6 +16,7 @@ public class DiningRoomScene : Scene
     [SerializeField] private GameObject son = default;
     [SerializeField] private GameObject grandson = default;
     [SerializeField] private GameObject daughter = default;
+    [SerializeField] private GameObject daughterNurse = default;
 
     public override void ToggleActive(bool state) {
         rootCanvas.SetActive(state);
@@ -84,6 +85,7 @@ public class DiningRoomScene : Scene
         son.SetActive(true);
         grandson.SetActive(true);
         daughter.SetActive(true);
+        daughterNurse.SetActive(false);
     }
 
     private void ShowBreakfastPose() {
@@ -94,11 +96,11 @@ public class DiningRoomScene : Scene
     }
 
     private void ShowDaughterAppearPose() {
-        daughter.SetActive(true);
+        daughterNurse.SetActive(true);
     }
 
     private void ShowDaughterDisappearPose() {
-        daughter.SetActive(false);
+        daughterNurse.SetActive(false);
     }
 
     private void ShowDinnerPose() {
@@ -111,5 +113,6 @@ public class DiningRoomScene : Scene
         son.SetActive(false);
         grandson.SetActive(false);
         daughter.SetActive(false);
+        daughterNurse.SetActive(false);
     }
 }

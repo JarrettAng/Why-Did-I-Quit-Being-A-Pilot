@@ -99,6 +99,7 @@ public class SoundManager : Singleton<SoundManager>
         }
     }
 
+    [YarnCommand("StopSound")]
     public void StopSound(string name) {
         if(soundDictionary.TryGetValue(name, out Sound requestedSound)) {
             if(requestedSound.Source.isPlaying) requestedSound.Source.Stop();

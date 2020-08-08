@@ -137,21 +137,21 @@ MonoBehaviour:
   - Name: EndingPress1
     AudioMixerGroup: {fileID: -1163148210512150734, guid: 432dd5ea3b82fae42bfc25408bfb6564, type: 2}
     Clip: {fileID: 8300000, guid: 00ab32ebff70abc45b1113625f61e475, type: 3}
-    Volume: 0.8
+    Volume: 0.65
     Pitch: 1
     Loop: 0
     Source: {fileID: 0}
   - Name: EndingPress2
     AudioMixerGroup: {fileID: -1163148210512150734, guid: 432dd5ea3b82fae42bfc25408bfb6564, type: 2}
     Clip: {fileID: 8300000, guid: 0d0c88d7d2c3ae04fa4cca734ba00cd4, type: 3}
-    Volume: 0.8
+    Volume: 0.65
     Pitch: 1
     Loop: 0
     Source: {fileID: 0}
   - Name: EndingPress3
     AudioMixerGroup: {fileID: -1163148210512150734, guid: 432dd5ea3b82fae42bfc25408bfb6564, type: 2}
     Clip: {fileID: 8300000, guid: 061b3bbec98ef294eb1b5d4dcc3ceba9, type: 3}
-    Volume: 0.8
+    Volume: 0.65
     Pitch: 1
     Loop: 0
     Source: {fileID: 0}
