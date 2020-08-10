@@ -7,6 +7,7 @@ using Yarn.Unity;
 public class DialogueDisplay : MonoBehaviour
 {
     [Header("References")]
+    [SerializeField] private GameObject namePanel = default;
     [SerializeField] private TextMeshProUGUI nameText = default;
     [SerializeField] private TextMeshProUGUI contentText = default;
 
@@ -39,6 +40,10 @@ public class DialogueDisplay : MonoBehaviour
             case "Grandson":
                 nameToDisplay = "Oscar, your grandson";
                 break;
+            case "Alwyn":
+                nameToDisplay = "Alwyn, your friend";
+                break;
+
             case "None":
                 nameToDisplay = null;
                 break;
@@ -54,9 +59,9 @@ public class DialogueDisplay : MonoBehaviour
 
     private void DisplayNameText(string name) {
         if(name == null) {
-            if(nameText.gameObject.activeSelf == true) nameText.gameObject.SetActive(false);
+            if(namePanel.gameObject.activeSelf == true) namePanel.gameObject.SetActive(false);
         } else {
-            if(nameText.gameObject.activeSelf == false) nameText.gameObject.SetActive(true);
+            if(namePanel.gameObject.activeSelf == false) namePanel.gameObject.SetActive(true);
             nameText.text = name;
         }
 

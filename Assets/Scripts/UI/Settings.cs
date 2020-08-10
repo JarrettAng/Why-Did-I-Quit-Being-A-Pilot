@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class Settings : MonoBehaviour
 {
+    public class UnityFloatEvent : UnityEvent<float> { }
+    public static UnityFloatEvent NewTextSpeedUpdate = new UnityFloatEvent(); 
+
     [Header("References")]
     [SerializeField] private Slider musicSlider = default;
     [SerializeField] private Slider sfxSlider = default;
@@ -42,11 +46,13 @@ public class Settings : MonoBehaviour
     }
 
     public void UpdateTextSpeed(float sliderValue) {
-
+        storedData.TextSpeed = sliderValue;
     }
 
     // Called when the player goes back to the main panel; Data is only saved upon exiting settings
     public void SaveSettings() {
+        NewTextSpeedUpdate.Invoke(storedData.TextSpeed);
+
         SaveManager.SaveSettingsData(storedData);
     }
 }

@@ -226,7 +226,7 @@ But should I even try asking Amanda?
 title: Scene_2A
 tags: 
 colorID: 0
-position: 971,-475
+position: 971,-477
 ---
 << set $amandaKnowsInvestigation to 1>> 
 << DisplayName Dialogue_TextPanel Grandfather>> 
@@ -250,6 +250,9 @@ Okay, but make it quick.
     Not this again…
     Look I don’t have time for this, I’ve got to go-
     ->Tell me why I retired!
+        << DisplayName Dialogue_TextPanel Grandfather>> 
+        Tell me why I retired!
+        << DisplayName Dialogue_TextPanel Daughter>> 
         Look. I told you already, I’m late.
         I’m sorry. Maybe, we’ll talk another time!
         << ShowPose DiningRoomScene DAUGHTERDISAPPEAR>> 
@@ -300,7 +303,7 @@ I guess it’s time to phone my friends.
 title: Scene_2A.1
 tags: 
 colorID: 0
-position: 1251,-481
+position: 1251,-485
 ---
 << PlayConcernMusic SoundManager>> 
 << DisplayName Dialogue_TextPanel Grandfather>> 
@@ -632,7 +635,7 @@ Enough speculating, I should call my son right away.
 title: Scene_2.3
 tags: 
 colorID: 0
-position: 2646,-364
+position: 2647,-366
 ---
 << ShowPose FrontDoorAreaScene PHONESTARE>> 
 << UseDialoguePositionSet2 FrontDoorAreaScene>> 
@@ -712,6 +715,7 @@ Oh, hi dad.
             << DisplayName Dialogue_TextPanel Grandfather>> 
             {$ellipsis}
             I’m just going to lie down for a while.
+            [[Scene_3]]
         -> I only know I was in an accident. << if $paulHeardOfAccident is 1>>
             << DisplayName Dialogue_TextPanel Grandfather>> 
             I only know I was in an accident.
@@ -766,7 +770,7 @@ position: 2921,-493
 << DisplayName Dialogue_TextPanel Son>> 
 << PlayConcernMusic SoundManager>>
 Oh no.
-Yes dad. I do but…
+I would love to tell you more but...
 Amanda called me a while ago, and she told me about what you said this morning.
 She also told me not to tell you anything…
 << DisplayName Dialogue_TextPanel Grandfather>> 
@@ -905,7 +909,9 @@ Let’s review what I know.
 << endif>> 
 << if $sonCallRejected is 1>> 
     << set $paulKnowsSomethingAboutCrash to 1>> 
-    Amanda keeps interfering with my investigation. She even told Ryan to keep silent about this! Why?
+    I know that Amanda keeps interfering with my investigation. 
+    She even told Ryan to keep silent about this! Why?
+    *Sigh*
 << endif>> 
 << if $paulKnowsSomethingAboutCrash is 0>> 
     {$ellipsis}
@@ -1268,6 +1274,7 @@ If I investigate any further, it’s likely I might just relapse again…
 I don’t want that to happen obviously.
 {$ellipsis}
 Alright, let’s see what kind of conclusion I can come up with using what I know... and I'll end it there.
+Now where's my good old typewriter?
 << BlackenIn EffectManager 3>>
 << ShowEnding EndingTransition>>
 ===
